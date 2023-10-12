@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 namespace ShopManagement.Application.Contract.ProductCategory
 {
     public interface IProductCategoryApplication
-    {
+    {   
+        List<ProductCategoryViewModel> GetList();
+
         OperationResult Create(CreatePoductCategory command);
 
         OperationResult Edit(EditProductCategory ommand);

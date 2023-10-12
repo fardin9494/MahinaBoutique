@@ -52,7 +52,9 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
                 Name = x.Name,
                 Picture = x.Picture,
-                UnitPrice = x.UnitPrice
+                UnitPrice = x.UnitPrice,
+                IsInStock = x.IsInStock,
+               
             });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
