@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Domain;
+using ShopManagement.Domain.ProductAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,8 @@ namespace ShopManagement.Domain.ProductPictureAgg
         public long ProductId { get; private set; }
 
         public bool IsRemoved { get; private set; }
+
+        public Product Product { get; private set; }
 
         public ProductPicture(string picture, string pictureAlt, string pictureTitle, long productId)
         {

@@ -1,5 +1,6 @@
 ﻿using _0_SelfBuildFramwork.Domain;
 using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,14 @@ namespace ShopManagement.Domain.ProductAgg
         public long CategoryId { get; private set; }
 
         public ProductCategory Category { get; private set; }
+
+        public List<ProductPicture> Pictures { get; private set; }
+
+        public Product()
+        {
+            Pictures = new List<ProductPicture>();
+        }
+
 
         public Product(string name, string code, double unitPrice,
             string picture, string pictureTitle, string pictureAlt,
