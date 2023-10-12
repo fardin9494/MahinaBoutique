@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using ShopManagement.Application.Contract.Product;
 using ShopManagement.Application.Contract.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
 using System;
@@ -55,6 +56,7 @@ namespace ShopManagement.Application
         {
             return _pictureRepository.GetDetails(id);
         }
+
 
         public OperationResult Remove(long id)
         {

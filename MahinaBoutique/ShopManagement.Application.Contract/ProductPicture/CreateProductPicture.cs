@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopManagement.Application.Contract.Product;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +16,7 @@ namespace ShopManagement.Application.Contract.ProductPicture
         public string PictureTitle { get; set; }
 
         public long ProductId { get; set; }
+
+        public List<ProductViewModel> Products { get; set; }
     }
 }

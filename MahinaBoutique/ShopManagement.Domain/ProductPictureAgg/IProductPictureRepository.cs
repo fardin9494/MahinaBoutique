@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Domain;
+using ShopManagement.Application.Contract.Product;
 using ShopManagement.Application.Contract.ProductPicture;
 using System;
 using System.Collections.Generic;
@@ -13,5 +14,6 @@ namespace ShopManagement.Domain.ProductPictureAgg
             List<ProductPictureViewModel> Search(ProductPictureSearchModel searchmodel);
 
             EditProductPicture GetDetails(long id);
+
      }
 }

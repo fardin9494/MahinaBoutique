@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using ShopManagement.Application.Contract.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,6 @@ namespace ShopManagement.Application.Contract.ProductPicture
         OperationResult Restore(long id);
 
         List<ProductPictureViewModel> Search(ProductPictureSearchModel searchmodel);
+
     }
 }

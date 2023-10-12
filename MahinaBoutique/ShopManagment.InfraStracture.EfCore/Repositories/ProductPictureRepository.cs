@@ -1,5 +1,6 @@
 ﻿using _0_SelfBuildFramwork.Infrastracture;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Application.Contract.Product;
 using ShopManagement.Application.Contract.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.InfraStracture.EfCore;
@@ -34,6 +35,7 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
             }).FirstOrDefault(x => x.Id == id);
         }
 
+
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchmodel)
         {
             var query = _shopContext.ProductPictures.Include(x => x.Product).Select(x => new ProductPictureViewModel
@@ -42,7 +44,9 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
                 Id = x.Id,
                 Picture = x.Picture,
                 Product = x.Product.Name,
-                ProductId = x.ProductId
+                ProductId = x.ProductId,
+                IsRemoved = x.IsRemoved,
+                
             });
 
             if(searchmodel.ProductId != 0)
