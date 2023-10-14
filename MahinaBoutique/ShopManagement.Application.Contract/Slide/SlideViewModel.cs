@@ -10,6 +10,8 @@
 
         public string Title { get; set; }
 
-        public string CreationTitle { get; set; }
+        public string CreationDate { get; set; }
+
+        public bool IsRemoved { get; set; }
     }
 }

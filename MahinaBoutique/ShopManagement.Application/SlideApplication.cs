@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ShopManagement.Application
 {
-    class SlideApplication : ISlideApplication
+    public class SlideApplication : ISlideApplication
     {
         private readonly ISlideRepository _slideRepository;
 
