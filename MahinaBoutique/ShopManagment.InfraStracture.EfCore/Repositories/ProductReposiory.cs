@@ -1,4 +1,5 @@
-﻿using _0_SelfBuildFramwork.Infrastracture;
+﻿using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Infrastracture;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contract.Product;
 using ShopManagement.Domain.ProductAgg;
@@ -58,7 +59,7 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
                 CategoryId = x.CategoryId,
                 Code = x.Code,
                 Id = x.Id,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Name = x.Name,
                 Picture = x.Picture,
                 UnitPrice = x.UnitPrice,

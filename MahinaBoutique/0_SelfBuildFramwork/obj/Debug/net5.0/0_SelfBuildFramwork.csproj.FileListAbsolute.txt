@@ -9,3 +9,4 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Debug\net5.
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Debug\net5.0\0_SelfBuildFramwork.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Debug\net5.0\ref\0_SelfBuildFramwork.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Debug\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Debug\net5.0\0_SelfBuildFramwork.csproj.AssemblyReference.cache

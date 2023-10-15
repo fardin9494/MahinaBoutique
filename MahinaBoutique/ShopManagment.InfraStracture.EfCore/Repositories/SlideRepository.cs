@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _0_SelfBuildFramwork.Application;
 
 namespace ShopManagment.InfraStracture.EfCore.Repositories
 {
@@ -38,7 +39,7 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
         public List<SlideViewModel> GetList()
         {
             return _shopContext.Slides.Select(x => new SlideViewModel{
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Heading = x.Heading,
                 Id = x.Id,
                 Picture = x.Picture,

@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 using _0_SelfBuildFramwork.Infrastracture;
+using _0_SelfBuildFramwork.Application;
 
 namespace ShopManagement.InfraStracture.EfCore.Repositories
 {
@@ -50,7 +51,7 @@ namespace ShopManagement.InfraStracture.EfCore.Repositories
         {
             var query = _dbContext.ProductCategories.Select(x => new ProductCategoryViewModel
             {
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Id = x.Id,
                 Image = x.Image,
                 Name = x.Name,
