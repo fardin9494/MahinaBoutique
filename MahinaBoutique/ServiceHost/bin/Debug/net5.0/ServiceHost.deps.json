@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ServiceHost/1.0.0": {
         "dependencies": {
+          "MahinaBoutique.Query": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "ShopManagment.Infrastracture.Config": "1.0.0",
@@ -1815,6 +1816,17 @@
           "0_SelfBuildFramwork.dll": {}
         }
       },
+      "MahinaBoutique.Query/1.0.0": {
+        "dependencies": {
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "runtime": {
+          "MahinaBoutique.Query.dll": {}
+        },
+        "compile": {
+          "MahinaBoutique.Query.dll": {}
+        }
+      },
       "ShopManagement.Application/1.0.0": {
         "dependencies": {
           "ShopManagement.Application.Contract": "1.0.0",
@@ -1853,6 +1865,7 @@
       "ShopManagment.Infrastracture.Config/1.0.0": {
         "dependencies": {
           "0_SelfBuildFramwork": "1.0.0",
+          "MahinaBoutique.Query": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -4431,6 +4444,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "0_SelfBuildFramwork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MahinaBoutique.Query/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

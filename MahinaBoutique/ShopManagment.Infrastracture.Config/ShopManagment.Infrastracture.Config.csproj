@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\0_SelfBuildFramwork\0_SelfBuildFramwork.csproj" />
+    <ProjectReference Include="..\MahinaBoutique.Query\MahinaBoutique.Query.csproj" />
     <ProjectReference Include="..\ShopManagement.Application.Contract\ShopManagement.Application.Contract.csproj" />
     <ProjectReference Include="..\ShopManagement.Application\ShopManagement.Application.csproj" />
     <ProjectReference Include="..\ShopManagement.Domain\ShopManagement.Domain.csproj" />

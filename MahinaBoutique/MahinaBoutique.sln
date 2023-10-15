@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagment.Infrastractur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{BA894CBD-F1E5-4576-9FC2-DBB52D72915E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahinaBoutique.Query", "MahinaBoutique.Query\MahinaBoutique.Query.csproj", "{BC631D5E-57C2-43F9-8012-E5D67DA5E7D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{BA894CBD-F1E5-4576-9FC2-DBB52D72915E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA894CBD-F1E5-4576-9FC2-DBB52D72915E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA894CBD-F1E5-4576-9FC2-DBB52D72915E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC631D5E-57C2-43F9-8012-E5D67DA5E7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC631D5E-57C2-43F9-8012-E5D67DA5E7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC631D5E-57C2-43F9-8012-E5D67DA5E7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC631D5E-57C2-43F9-8012-E5D67DA5E7D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

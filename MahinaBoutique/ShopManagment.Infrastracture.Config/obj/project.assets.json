@@ -1498,6 +1498,19 @@
           "bin/placeholder/0_SelfBuildFramwork.dll": {}
         }
       },
+      "MahinaBoutique.Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MahinaBoutique.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MahinaBoutique.Query.dll": {}
+        }
+      },
       "ShopManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5780,6 +5793,11 @@
       "path": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj",
       "msbuildProject": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj"
     },
+    "MahinaBoutique.Query/1.0.0": {
+      "type": "project",
+      "path": "../MahinaBoutique.Query/MahinaBoutique.Query.csproj",
+      "msbuildProject": "../MahinaBoutique.Query/MahinaBoutique.Query.csproj"
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application/ShopManagement.Application.csproj",
@@ -5804,6 +5822,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "0_SelfBuildFramwork >= 1.0.0",
+      "MahinaBoutique.Query >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0",
@@ -5847,6 +5866,9 @@
           "projectReferences": {
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj"
+            },
+            "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj": {
+              "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj"
             },
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"

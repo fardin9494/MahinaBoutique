@@ -21,3 +21,5 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\obj\Debug\net5.0\ShopManagment.Infrastracture.Config.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\obj\Debug\net5.0\ref\ShopManagment.Infrastracture.Config.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\obj\Debug\net5.0\ShopManagment.Infrastracture.Config.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\MahinaBoutique.Query.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\MahinaBoutique.Query.pdb

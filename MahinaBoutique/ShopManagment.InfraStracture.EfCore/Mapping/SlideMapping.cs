@@ -22,6 +22,7 @@ namespace ShopManagment.InfraStracture.EfCore.Mapping
             builder.Property(x => x.Title).HasMaxLength(255);
             builder.Property(x => x.Text).HasMaxLength(1200);
             builder.Property(x => x.ButtonText).HasMaxLength(80).IsRequired();
+            builder.Property(x => x.Link).HasMaxLength(200);
         }
     }
 }

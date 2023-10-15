@@ -29,7 +29,8 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Text = x.Text,
-                Title = x.Title
+                Title = x.Title,
+                Link = x.Link
 
                 }).FirstOrDefault(x => x.Id == id);
         }
