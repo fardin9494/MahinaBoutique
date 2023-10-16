@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DiscountManagemenet.Infrastracture.Config\DiscountManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\MahinaBoutique.Query\MahinaBoutique.Query.csproj" />
     <ProjectReference Include="..\ShopManagment.Infrastracture.Config\ShopManagment.Infrastracture.Config.csproj" />
   </ItemGroup>

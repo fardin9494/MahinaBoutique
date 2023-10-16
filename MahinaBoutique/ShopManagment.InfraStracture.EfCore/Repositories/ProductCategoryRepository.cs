@@ -1,12 +1,7 @@
 ﻿using ShopManagement.Application.Contract.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Globalization;
-using System.Text;
-using System.Threading.Tasks;
 using _0_SelfBuildFramwork.Infrastracture;
 using _0_SelfBuildFramwork.Application;
 

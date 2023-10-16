@@ -1,0 +1,17 @@
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\DiscountManagement.Domain.deps.json
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\ref\DiscountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.csproj.AssemblyReference.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.AssemblyInfoInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.AssemblyInfo.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.csproj.CoreCompileInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\ref\DiscountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Domain\obj\Debug\net5.0\DiscountManagement.Domain.pdb

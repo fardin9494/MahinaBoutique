@@ -1,3 +1,4 @@
+using DiscountManagement.Infrastracture.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,7 @@ namespace ServiceHost
         {
             var ConnectionString = Configuration.GetConnectionString("MahinaBoutique");
             ShopmanagmentBootstrapper.Configure(services,ConnectionString);
+            DiscountManagementBootStrapper.Configure(services,ConnectionString);
             services.AddRazorPages();
         }
 

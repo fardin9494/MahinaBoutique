@@ -2015,6 +2015,78 @@
           "bin/placeholder/0_SelfBuildFramwork.dll": {}
         }
       },
+      "DiscountManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Application.Contract": "1.0.0",
+          "DiscountManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.dll": {}
+        }
+      },
+      "DiscountManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastracture.Config/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Application": "1.0.0",
+          "DiscountManagement.Infrastracture.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Infrastracture.Config.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Infrastracture.Config.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastracture.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Infrastracture.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Infrastracture.EFCore.dll": {}
+        }
+      },
       "MahinaBoutique.Query/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7223,6 +7295,31 @@
       "path": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj",
       "msbuildProject": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj"
     },
+    "DiscountManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../DiscountMangement.Application/DiscountManagement.Application.csproj",
+      "msbuildProject": "../DiscountMangement.Application/DiscountManagement.Application.csproj"
+    },
+    "DiscountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Application.Contract/DiscountManagement.Application.Contract.csproj",
+      "msbuildProject": "../DiscountManagement.Application.Contract/DiscountManagement.Application.Contract.csproj"
+    },
+    "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj",
+      "msbuildProject": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+    },
+    "DiscountManagement.Infrastracture.Config/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagemenet.Infrastracture.Config/DiscountManagement.Infrastracture.Config.csproj",
+      "msbuildProject": "../DiscountManagemenet.Infrastracture.Config/DiscountManagement.Infrastracture.Config.csproj"
+    },
+    "DiscountManagement.Infrastracture.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Infrastracture.EFCore/DiscountManagement.Infrastracture.EFCore.csproj",
+      "msbuildProject": "../DiscountManagement.Infrastracture.EFCore/DiscountManagement.Infrastracture.EFCore.csproj"
+    },
     "MahinaBoutique.Query/1.0.0": {
       "type": "project",
       "path": "../MahinaBoutique.Query/MahinaBoutique.Query.csproj",
@@ -7256,6 +7353,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DiscountManagement.Infrastracture.Config >= 1.0.0",
       "MahinaBoutique.Query >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
@@ -7294,6 +7392,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\DiscountManagemenet.Infrastracture.Config\\DiscountManagement.Infrastracture.Config.csproj": {
+              "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\DiscountManagemenet.Infrastracture.Config\\DiscountManagement.Infrastracture.Config.csproj"
+            },
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj"
             },

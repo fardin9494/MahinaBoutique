@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ServiceHost/1.0.0": {
         "dependencies": {
+          "DiscountManagement.Infrastracture.Config": "1.0.0",
           "MahinaBoutique.Query": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -1814,6 +1815,68 @@
         },
         "compile": {
           "0_SelfBuildFramwork.dll": {}
+        }
+      },
+      "DiscountManagement.Application/1.0.0": {
+        "dependencies": {
+          "DiscountManagement.Application.Contract": "1.0.0",
+          "DiscountManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Application.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Application.dll": {}
+        }
+      },
+      "DiscountManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Application.Contract.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Domain.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastracture.Config/1.0.0": {
+        "dependencies": {
+          "DiscountManagement.Application": "1.0.0",
+          "DiscountManagement.Infrastracture.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Infrastracture.Config.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Infrastracture.Config.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastracture.EFCore/1.0.0": {
+        "dependencies": {
+          "DiscountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Infrastracture.EFCore.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Infrastracture.EFCore.dll": {}
         }
       },
       "MahinaBoutique.Query/1.0.0": {
@@ -4444,6 +4507,31 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "0_SelfBuildFramwork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Infrastracture.Config/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Infrastracture.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
