@@ -1079,7 +1079,8 @@
       },
       "DiscountManagement.Application.Contract/1.0.0": {
         "dependencies": {
-          "0_SelfBuildFramwork": "1.0.0"
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
         },
         "runtime": {
           "DiscountManagement.Application.Contract.dll": {}

@@ -39,6 +39,7 @@ namespace DiscountManagement.Infrastracture.EFCore.Repositories
             var product = _ShopContext.Products.Select(x => new {x.Id, x.Name}).ToList();
             var query = _context.CustomerDiscounts.Select(x => new CustomerDiscountViewModel{
                   StartDate = x.StartDate.ToFarsi(),
+                  CreationDate = x.CreationDate.ToFarsi(),
                   StartDateGlobal =x.StartDate,
                   DiscountRate = x.DiscountRate,
                   EndDate = x.EndDate.ToFarsi(),
@@ -51,17 +52,17 @@ namespace DiscountManagement.Infrastracture.EFCore.Repositories
 
             if(search.ProductId != 0)
             {
-                query.Where(x => x.ProductId == search.ProductId);
+                query = query.Where(x => x.ProductId == search.ProductId);
             }
 
             if (!string.IsNullOrWhiteSpace(search.StartDate))
             {
-                query.Where(x => x.StartDateGlobal >= search.StartDate.ToGeorgianDateTime() );
+               query =  query.Where(x => x.StartDateGlobal >= search.StartDate.ToGeorgianDateTime() );
             }
 
             if (!string.IsNullOrWhiteSpace(search.EndDate))
             {
-                query.Where(x => x.EndDateGlobal <= search.EndDate.ToGeorgianDateTime() );
+               query =  query.Where(x => x.EndDateGlobal <= search.EndDate.ToGeorgianDateTime() );
             }
 
             var discount = query.OrderByDescending(x => x.Id).ToList();

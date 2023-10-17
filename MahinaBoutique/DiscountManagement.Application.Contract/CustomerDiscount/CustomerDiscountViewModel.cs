@@ -8,6 +8,8 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
 
         public long ProductId {get; set;}
 
+        public string CreationDate { get; set; }
+
         public string Product { get; set; }
 
         public int DiscountRate { get; set; }

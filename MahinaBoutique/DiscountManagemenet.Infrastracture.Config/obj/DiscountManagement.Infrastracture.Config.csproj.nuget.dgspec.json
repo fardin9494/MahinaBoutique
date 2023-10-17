@@ -169,6 +169,9 @@
             "projectReferences": {
               "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj": {
                 "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj"
+              },
+              "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               }
             }
           }

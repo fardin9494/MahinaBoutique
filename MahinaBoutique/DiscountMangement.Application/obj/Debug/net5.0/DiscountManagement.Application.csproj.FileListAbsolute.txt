@@ -17,3 +17,5 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountMangement.Application\bin\D
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountMangement.Application\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountMangement.Application\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountMangement.Application\obj\Debug\net5.0\DiscountManagement.Application.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountMangement.Application\bin\Debug\net5.0\ShopManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountMangement.Application\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb

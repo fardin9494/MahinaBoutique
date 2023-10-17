@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopManagement.Application.Contract.Product;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,5 +18,7 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
         public string EndDate { get; set; }
 
         public string Reason { get; set; }
+
+        public List<ProductViewModel> Products { get; set; }
     }
 }

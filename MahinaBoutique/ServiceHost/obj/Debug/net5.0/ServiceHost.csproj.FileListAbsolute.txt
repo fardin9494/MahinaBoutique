@@ -189,3 +189,6 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\Discou
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\DiscountManagement.Infrastracture.EFCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discount\CustomerDiscount\Create.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discount\CustomerDiscount\Edit.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discount\CustomerDiscount\Index.cshtml.g.cs

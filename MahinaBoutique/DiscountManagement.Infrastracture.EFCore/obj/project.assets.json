@@ -1537,7 +1537,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_SelfBuildFramwork": "1.0.0"
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DiscountManagement.Application.Contract.dll": {}

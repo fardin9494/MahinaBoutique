@@ -13,3 +13,5 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Application.Cont
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Application.Contract\obj\Debug\net5.0\ref\DiscountManagement.Application.Contract.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb
