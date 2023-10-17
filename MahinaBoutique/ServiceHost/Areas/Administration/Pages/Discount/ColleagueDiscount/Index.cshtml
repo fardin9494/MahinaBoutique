@@ -1,11 +1,11 @@
 ﻿@page
-@model ServiceHost.Areas.Administration.Pages.Discount.CustomerDiscount.IndexModel
+@model ServiceHost.Areas.Administration.Pages.Discount.ColleagueDiscount.IndexModel
 @{
 }
 
 @{
   
-    ViewData["title"] = "مدیریت تخفیفات مشتریان";
+    ViewData["title"] = "مدیریت تخفیفات همکاری";
 }
 
 <div class="row">
@@ -25,14 +25,7 @@
             </div>
             <div class="panel-body">
                 <form class="form-inline" role="form" method="get">
-                    <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.StartDate">تاریخ شروع</label>
-                        <input class="form-control PersianDate" readonly asp-for="SearchModel.StartDate">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.EndDate">تاریخ پایان</label>
-                        <input class="form-control PersianDate" readonly asp-for="SearchModel.EndDate">
-                    </div>
+                 
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.ProductId"></label>
                         <select class="form-control" asp-for="SearchModel.ProductId" asp-items="@Model.Product"> 
@@ -51,7 +44,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">لیست گروه محصولات</h3>
+                <h3 class="panel-title">لیست تخفیفات همکاری</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -63,29 +56,41 @@
                                     <th>محصول</th>
                                     <th>درصد تخفیف</th>
                                     <th>تاریخ ایجاد</th>
-                                    <th>تاریخ شروع</th>
-                                    <th>تاریخ پایان</th>
-                                    <th>مناسبت</th>
+                                    <th>وضعیت</th>
                                     <th>عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                                @foreach (var item in Model.CustomerDiscount)
+                                @foreach (var item in Model.ColleagueDiscount)
                                 {
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>@item.Product</td>
-                                        <td>@item.DiscountRate</td>
+                                        <td>@item.DiscountRate%</td>
                                         <td>@item.CreationDate</td>
-                                        <td>@item.StartDate</td>
-                                        <td>@item.EndDate</td>
-                                        <td>@item.Reason</td>
-                                        <td class="text-center justify-content-center align-items-center">
-                                            <a class="btn btn-warning m-5" href="#showmodal=@Url.Page("./Index","Edit",new { id = item.Id })">
-                                                <i class="fa fa-edit">ویرایش</i>
-                                            </a>
-                                        </td>
+                                        @if (item.IsActive)
+                                            {
+                                                <td class="fa fa-2x fa-check text-success"></td>
+                                            }
+                                        else
+                                            {
+                                                <td class="fa fa-2x fa-remove text-danger"></td>
+                                            }
+                                       
+                                    <td class="text-center justify-content-center align-items-center">
+                                        <a class="btn btn-warning m-5" href="#showmodal=@Url.Page("./Index","Edit",new { id = item.Id })">
+                                            <i class="fa fa-edit">ویرایش</i>
+                                        </a>
+                                        @if (item.IsActive)
+                                        {
+                                            <a asp-page="./Index" asp-page-handler="Deactive" asp-route-id="@item.Id" class="btn btn-danger btn-custom waves-effect waves-light pt-5 m-5">غیرفعال سازی</a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-page="./Index" asp-page-handler="Active" asp-route-id="@item.Id" class="btn btn-success btn-custom waves-effect waves-light pt-5 m-5">فعال سازی</a>
+                                        }
+                                    </td>
                                     </tr>
                                 }
 
