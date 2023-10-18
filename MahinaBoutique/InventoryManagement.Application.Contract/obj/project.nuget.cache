@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4rykkV37gW7ATrxdjJUNwFRrGufmQBSA0inYKGYQ4CXPIr1AoQQqeIePBCIF4qCOWEKZUaw6VFGnn6xQh7CTCQ==",
+  "dgSpecHash": "GB4Hsuz4Kw1/+qgbJy60/phX9SZQ3E4ASrhK0RuSe+Ouwr2qYtjT6fM8DpoHOf/HoWD/V9heuKGk8bWREbt29w==",
   "success": true,
-  "projectFilePath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+  "projectFilePath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",

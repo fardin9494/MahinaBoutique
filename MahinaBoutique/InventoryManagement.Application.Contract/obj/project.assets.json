@@ -173,19 +173,6 @@
         "runtime": {
           "bin/placeholder/0_SelfBuildFramwork.dll": {}
         }
-      },
-      "InventoryManagement.Application.Contract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "0_SelfBuildFramwork": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
-        }
       }
     }
   },
@@ -550,17 +537,11 @@
       "type": "project",
       "path": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj",
       "msbuildProject": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj"
-    },
-    "InventoryManagement.Application.Contract/1.0.0": {
-      "type": "project",
-      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
-      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "0_SelfBuildFramwork >= 1.0.0",
-      "InventoryManagement.Application.Contract >= 1.0.0"
+      "0_SelfBuildFramwork >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -570,11 +551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
-      "projectName": "InventoryManagement.Domain",
-      "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+      "projectUniqueName": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+      "projectName": "InventoryManagement.Application.Contract",
+      "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
       "packagesPath": "C:\\Users\\Fardin\\.nuget\\packages\\",
-      "outputPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Domain\\obj\\",
+      "outputPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Application.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -597,9 +578,6 @@
           "projectReferences": {
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj"
-            },
-            "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-              "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
             }
           }
         }
