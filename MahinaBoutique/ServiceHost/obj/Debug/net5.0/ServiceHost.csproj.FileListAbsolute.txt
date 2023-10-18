@@ -195,3 +195,11 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discount\ColleagueDiscount\Create.cshtml.g.cs
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discount\ColleagueDiscount\Edit.cshtml.g.cs
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discount\ColleagueDiscount\Index.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastracture.Config.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastracture.Config.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.pdb

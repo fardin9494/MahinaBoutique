@@ -2088,6 +2088,63 @@
           "bin/placeholder/DiscountManagement.Infrastracture.EFCore.dll": {}
         }
       },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastracture.Config/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Infrastracture.EfCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Infrastracture.Config.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Infrastracture.Config.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastracture.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Infrastracture.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Infrastracture.EfCore.dll": {}
+        }
+      },
       "MahinaBoutique.Query/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7321,6 +7378,26 @@
       "path": "../DiscountManagement.Infrastracture.EFCore/DiscountManagement.Infrastracture.EFCore.csproj",
       "msbuildProject": "../DiscountManagement.Infrastracture.EFCore/DiscountManagement.Infrastracture.EFCore.csproj"
     },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
+      "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
+    },
+    "InventoryManagement.Infrastracture.Config/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Infrastracture.Config/InventoryManagement.Infrastracture.Config.csproj",
+      "msbuildProject": "../InventoryManagement.Infrastracture.Config/InventoryManagement.Infrastracture.Config.csproj"
+    },
+    "InventoryManagement.Infrastracture.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Infrastracture.EfCore/InventoryManagement.Infrastracture.EfCore.csproj",
+      "msbuildProject": "../InventoryManagement.Infrastracture.EfCore/InventoryManagement.Infrastracture.EfCore.csproj"
+    },
     "MahinaBoutique.Query/1.0.0": {
       "type": "project",
       "path": "../MahinaBoutique.Query/MahinaBoutique.Query.csproj",
@@ -7355,6 +7432,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DiscountManagement.Infrastracture.Config >= 1.0.0",
+      "InventoryManagement.Infrastracture.Config >= 1.0.0",
       "MahinaBoutique.Query >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
@@ -7395,6 +7473,9 @@
           "projectReferences": {
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\DiscountManagemenet.Infrastracture.Config\\DiscountManagement.Infrastracture.Config.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\DiscountManagemenet.Infrastracture.Config\\DiscountManagement.Infrastracture.Config.csproj"
+            },
+            "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Infrastracture.Config\\InventoryManagement.Infrastracture.Config.csproj": {
+              "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Infrastracture.Config\\InventoryManagement.Infrastracture.Config.csproj"
             },
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj"

@@ -4,7 +4,7 @@
     {
         public long Id { get; set; }
 
-        public long productId { get; set; }
+        public long ProductId { get; set; }
 
         public string Product { get; set; }
 

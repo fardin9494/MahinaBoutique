@@ -1,0 +1,15 @@
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.deps.json
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfo.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.pdb

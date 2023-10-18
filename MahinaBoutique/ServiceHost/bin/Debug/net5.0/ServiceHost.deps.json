@@ -34,6 +34,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "DiscountManagement.Infrastracture.Config": "1.0.0",
+          "InventoryManagement.Infrastracture.Config": "1.0.0",
           "MahinaBoutique.Query": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -1878,6 +1879,55 @@
         },
         "compile": {
           "DiscountManagement.Infrastracture.EFCore.dll": {}
+        }
+      },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Application.Contract.dll": {}
+        },
+        "compile": {
+          "InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Domain.dll": {}
+        },
+        "compile": {
+          "InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastracture.Config/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Infrastracture.EfCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Infrastracture.Config.dll": {}
+        },
+        "compile": {
+          "InventoryManagement.Infrastracture.Config.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastracture.EfCore/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Infrastracture.EfCore.dll": {}
+        },
+        "compile": {
+          "InventoryManagement.Infrastracture.EfCore.dll": {}
         }
       },
       "MahinaBoutique.Query/1.0.0": {
@@ -4533,6 +4583,26 @@
       "sha512": ""
     },
     "DiscountManagement.Infrastracture.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Infrastracture.Config/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Infrastracture.EfCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
