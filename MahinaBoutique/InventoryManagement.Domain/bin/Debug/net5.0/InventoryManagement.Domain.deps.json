@@ -149,10 +149,28 @@
       },
       "InventoryManagement.Application.Contract/1.0.0": {
         "dependencies": {
-          "0_SelfBuildFramwork": "1.0.0"
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
         },
         "runtime": {
           "InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "ShopManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagement.Application.Contract.dll": {}
+        }
+      },
+      "ShopManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagement.Domain.dll": {}
         }
       }
     }
@@ -267,6 +285,16 @@
       "sha512": ""
     },
     "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagement.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

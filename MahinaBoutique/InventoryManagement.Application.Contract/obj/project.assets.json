@@ -173,6 +173,33 @@
         "runtime": {
           "bin/placeholder/0_SelfBuildFramwork.dll": {}
         }
+      },
+      "ShopManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Application.Contract.dll": {}
+        }
+      },
+      "ShopManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
       }
     }
   },
@@ -537,11 +564,22 @@
       "type": "project",
       "path": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj",
       "msbuildProject": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj"
+    },
+    "ShopManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj",
+      "msbuildProject": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj"
+    },
+    "ShopManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
+      "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "0_SelfBuildFramwork >= 1.0.0"
+      "0_SelfBuildFramwork >= 1.0.0",
+      "ShopManagement.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -578,6 +616,9 @@
           "projectReferences": {
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\0_SelfBuildFramwork\\0_SelfBuildFramwork.csproj"
+            },
+            "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+              "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
             }
           }
         }

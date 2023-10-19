@@ -25,3 +25,5 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.Config\obj\Debug\net5.0\InventoryManagement.Infrastracture.Config.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.Config\obj\Debug\net5.0\ref\InventoryManagement.Infrastracture.Config.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.Config\obj\Debug\net5.0\InventoryManagement.Infrastracture.Config.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Application.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Application.pdb

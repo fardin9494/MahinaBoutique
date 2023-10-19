@@ -1516,7 +1516,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_SelfBuildFramwork": "1.0.0"
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/InventoryManagement.Application.Contract.dll": {}

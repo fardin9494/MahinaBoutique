@@ -13,3 +13,7 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Con
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb

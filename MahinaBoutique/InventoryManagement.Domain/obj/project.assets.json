@@ -178,13 +178,41 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_SelfBuildFramwork": "1.0.0"
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
         },
         "runtime": {
           "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "ShopManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Application.Contract.dll": {}
+        }
+      },
+      "ShopManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
         }
       }
     }
@@ -555,6 +583,16 @@
       "type": "project",
       "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
       "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
+    },
+    "ShopManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj",
+      "msbuildProject": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj"
+    },
+    "ShopManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
+      "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -65,7 +65,7 @@ namespace InventoryManagement.Application
         public OperationResult Reduce(ReduceInventory command)
         {
             var operation = new OperationResult();
-            var inventory = _repository.GetWith(command.ProductId);
+            var inventory = _repository.GetWith(command.InventoryId);
             inventory.Reduce(command.Count,1,command.Description,0);
             _repository.SaveChanges();
             return operation.Succedded();

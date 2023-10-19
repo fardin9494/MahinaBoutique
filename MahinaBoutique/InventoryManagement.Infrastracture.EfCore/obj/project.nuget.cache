@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3j+reWhdayU7RaWYgCk0Zke34XEAzVnzvf+6bGc+Fz1CwDpukb6WKjsiyAZwwY8KMYenTZ2+W6sTU5h5MvzulQ==",
+  "dgSpecHash": "WZ0vQGpR34FrAARtEpBEcVZDUF3ixsTjvKxxgIhr7/ZzCHJYEuseRwTgga5bfl1b53r5f191M35SvyQXkc7icg==",
   "success": true,
   "projectFilePath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\InventoryManagement.Infrastracture.EfCore\\InventoryManagement.Infrastracture.EfCore.csproj",
   "expectedPackageFiles": [
