@@ -63,6 +63,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>محصول</th>
+                                    <th>تاریخ تولید</th>
                                     <th>موجودی</th>
                                     <th>قیمت واحد</th>
                                     <th class="text-center">عملیات</th>
@@ -75,17 +76,21 @@
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>@item.Product</td>
+                                        <td>@item.CreaionDate</td>
                                         <td>@item.CurrentCount</td>
                                         <td>@item.UnitPrice</td>
                                         <td class="text-center justify-content-center align-items-center">
                                             <a class="btn btn-warning m-5" href="#showmodal=@Url.Page("./Index","Edit",new { id = item.Id })">
-                                                <i class="fa fa-edit">ویرایش</i>
+                                                <i class="fa fa-edit"></i> ویرایش
                                             </a>
                                             <a class="btn btn-success m-5" href="#showmodal=@Url.Page("./Index","Increase",new { id = item.Id })">
-                                                <i class="fa fa-plus">افزایش موجودی</i>
+                                                <i class="fa fa-plus"></i> افزایش موجودی
                                             </a>
                                             <a class="btn btn-danger m-5" href="#showmodal=@Url.Page("./Index","Reduce",new { id = item.Id })">
-                                                <i class="fa fa-minus">کاهش موجودی</i>
+                                                <i class="fa fa-minus"></i> کاهش موجودی
+                                            </a>
+                                            <a class="btn btn-primary m-5" onclick="$('.modal-dialog').css('width', '60%')" href="#showmodal=@Url.Page("./Index","OperationLog",new { InventoryId = item.Id })">
+                                                <i class="fa fa-recycle"></i> تاریخچه عملیات ها
                                             </a>
 
                                         </td>

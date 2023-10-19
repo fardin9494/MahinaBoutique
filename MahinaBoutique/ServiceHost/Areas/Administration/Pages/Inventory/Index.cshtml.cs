@@ -66,7 +66,6 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             var Increase = new IncreaseInventory{
                 InventoryId = id
                 };
-            _inventoryApplication.Increase(Increase);
             return Partial("./Increase",Increase);
         }
 
@@ -89,6 +88,12 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
         {
             var result = _inventoryApplication.Reduce(command);
             return new JsonResult(result);
+        }
+
+        public IActionResult OnGetOperationLog(long inventoryId)
+        {
+            var operation = _inventoryApplication.Operations(inventoryId);
+            return Partial("./Operation",operation);
         }
 
     }

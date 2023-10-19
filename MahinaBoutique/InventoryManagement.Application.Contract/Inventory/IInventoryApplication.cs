@@ -22,5 +22,7 @@ namespace InventoryManagement.Application.Contract.Inventory
         OperationResult Reduce(ReduceInventory command);
 
         OperationResult Reduce(List<ReduceInventory> command);
+
+        List<InventoryOperationViewModel> Operations (long InventoryId);
     }
 }

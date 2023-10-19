@@ -1,4 +1,5 @@
-﻿using _0_SelfBuildFramwork.Infrastracture;
+﻿using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Infrastracture;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using ShopManagement.InfraStracture.EfCore;
@@ -35,6 +36,24 @@ namespace InventoryManagement.Infrastracture.EfCore.Repositories
            return _inventoryContext.Inventory.FirstOrDefault(x => x.ProductId == ProductId);
         }
 
+        public List<InventoryOperationViewModel> Operations(long InventoryId)
+        {
+            var inventory = _inventoryContext.Inventory.FirstOrDefault(x => x.Id == InventoryId);
+
+           return inventory.Operations.Select(x => new InventoryOperationViewModel{
+               Count = x.Count,
+               CurrentCount = x.CurrentCount,
+               Description = x.Description,
+               Id = x.Id,
+               Operation = x.Operation,
+               OperationTime = x.OperationTime.ToFarsi(),
+               Operator = "مدیر",
+               OperatorId = x.OperatorId,
+               OrderId = x.OrderId,
+               
+               }).ToList();
+        }
+
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
         {
             var product = _shopContext.Products.Select(x => new{x.Id,x.Name}).ToList();
@@ -44,6 +63,7 @@ namespace InventoryManagement.Infrastracture.EfCore.Repositories
                 InStock = x.InStock,
                 ProductId = x.ProductId,
                 UnitPrice = x.UnitPrice,
+                CreaionDate = x.CreationDate.ToFarsi(),
                 CurrentCount = x.CalculateCurrentCount()
             });
 
