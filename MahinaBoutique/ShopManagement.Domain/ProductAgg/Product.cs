@@ -15,8 +15,6 @@ namespace ShopManagement.Domain.ProductAgg
 
         public string Code { get; private set; }
 
-        public double UnitPrice { get; private set; }
-
         public string Picture { get; private set; }
 
         public string PictureTitle { get; private set; }
@@ -26,8 +24,6 @@ namespace ShopManagement.Domain.ProductAgg
         public string ShortDescription { get; private set; }
 
         public string Description { get; private set; }
-
-        public bool IsInStock { get; private set; }
 
         public string MetaDescription { get; private set; }
 
@@ -47,34 +43,31 @@ namespace ShopManagement.Domain.ProductAgg
         }
 
 
-        public Product(string name, string code, double unitPrice,
+        public Product(string name, string code,
             string picture, string pictureTitle, string pictureAlt,
             string shortDescription, string description,
             string metaDescription, string keywords, string slug, long categoryId)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             Picture = picture;
             PictureTitle = pictureTitle;
             PictureAlt = pictureAlt;
             ShortDescription = shortDescription;
             Description = description;
-            IsInStock = true;
             MetaDescription = metaDescription;
             Keywords = keywords;
             Slug = slug;
             CategoryId = categoryId;
         }
 
-        public void Edit(string name, string code, double unitPrice,
+        public void Edit(string name, string code,
             string picture, string pictureTitle, string pictureAlt,
             string shortDescription, string description,
             string metaDescription, string keywords, string slug, long categoryId)
         {
              Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             Picture = picture;
             PictureTitle = pictureTitle;
             PictureAlt = pictureAlt;
@@ -84,17 +77,6 @@ namespace ShopManagement.Domain.ProductAgg
             Keywords = keywords;
             Slug = slug;
             CategoryId = categoryId;
-        }
-
-        public void MakeAvailable()
-        {
-            IsInStock = true;        
-        }
-
-
-        public void EndOfInventory()
-        {
-            IsInStock = false;
         }
     }
 }

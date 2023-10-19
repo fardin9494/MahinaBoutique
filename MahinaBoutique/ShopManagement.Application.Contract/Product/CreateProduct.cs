@@ -16,9 +16,6 @@ namespace ShopManagement.Application.Contract.Product
         [Required (ErrorMessage = ValidationMessages.Required)]
         public string Code { get; set; }
 
-        [Required (ErrorMessage = ValidationMessages.Required)]
-        public double UnitPrice { get; set; }
-
         public string Picture { get; set; }
 
         public string PictureTitle { get; set; }

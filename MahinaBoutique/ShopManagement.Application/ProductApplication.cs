@@ -27,7 +27,7 @@ namespace ShopManagement.Application
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
             var slug = GenerateSlug.Slugify(command.Slug);
-            var product = new Product(command.Name,command.Code,command.UnitPrice,
+            var product = new Product(command.Name,command.Code,
                                         command.Picture,command.PictureTitle,
                                         command.PictureAlt,command.ShortDescription,command.Description,
                                         command.MetaDescription,command.Keywords,slug,command.CategoryId);
@@ -50,7 +50,7 @@ namespace ShopManagement.Application
             }
             var product = _productRepository.GetBy(command.Id);
             var slug = GenerateSlug.Slugify(command.Slug);
-            product.Edit(command.Name, command.Code, command.UnitPrice,
+            product.Edit(command.Name, command.Code,
                                 command.Picture,command.PictureTitle,
                                 command.PictureAlt,command.ShortDescription,command.Description,
                                 command.MetaDescription,command.Keywords,slug,command.CategoryId);
@@ -69,31 +69,6 @@ namespace ShopManagement.Application
             return _productRepository.GetProducts();
         }
 
-        public OperationResult InStock(long id)
-        {
-            var operation = new OperationResult();
-            if(_productRepository.GetBy(id) == null)
-            {
-                return operation.Failed(ApplicationMessages.NullRecordMessage);
-            }
-            var product = _productRepository.GetBy(id);
-            product.MakeAvailable();
-            _productRepository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public OperationResult NotInStock(long id)
-        {
-             var operation = new OperationResult();
-            if(_productRepository.GetBy(id) == null)
-            {
-                return operation.Failed(ApplicationMessages.NullRecordMessage);
-            }
-            var product = _productRepository.GetBy(id);
-            product.EndOfInventory();
-            _productRepository.SaveChanges();
-            return operation.Succedded();
-        }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
         {

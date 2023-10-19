@@ -61,18 +61,5 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
             var result = _products.Edit(command);
             return new JsonResult(result);
         }
-
-        public RedirectToPageResult OnGetNotInStock(long id)
-        {
-            var result = _products.NotInStock(id);
-            return RedirectToPage("./Index");
-            //we can control server erorr here with result
-        }
-
-        public RedirectToPageResult OnGetMakeAvailable(long id)
-        {
-            var result= _products.InStock(id);
-            return RedirectToPage("./Index");
-        }
     }
 }
