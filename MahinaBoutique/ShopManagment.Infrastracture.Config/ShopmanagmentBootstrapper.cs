@@ -1,4 +1,5 @@
-﻿using MahinaBoutique.Query.Contract.ProductCategory;
+﻿using MahinaBoutique.Query.Contract.Product;
+using MahinaBoutique.Query.Contract.ProductCategory;
 using MahinaBoutique.Query.Contract.Slide;
 using MahinaBoutique.Query.Query;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +34,7 @@ namespace ShopManagement.Infrastracture.Config
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
+            services.AddTransient<IProductQuery, ProductQuery>();
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(Connectionstring));
         }
