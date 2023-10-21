@@ -23,3 +23,15 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\obj\Debug\net5.0\ShopManagment.Infrastracture.Config.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\MahinaBoutique.Query.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\MahinaBoutique.Query.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\DiscountManagement.Infrastracture.EFCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\DiscountManagement.Infrastracture.EFCore.pdb

@@ -19,3 +19,15 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\obj\Debug\net5.0\MahinaBoutique.Query.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Infrastracture.EFCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Infrastracture.EFCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Domain.pdb

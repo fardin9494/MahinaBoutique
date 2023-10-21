@@ -9,5 +9,7 @@ namespace MahinaBoutique.Query.Contract.ProductCategory
     public interface IProductCategoryQuery
     {
         List<ProductCategoryQueryModel> GetCategories();
+
+        List<ProductCategoryQueryModel> GetCategoryWithProducts();
     }
 }

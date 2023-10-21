@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahinaBoutique.Query.Contract.Product;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,8 @@ namespace MahinaBoutique.Query.Contract.ProductCategory
         public string ImageTitle { get; set; }
 
          public string Slug { get; set; }
+
+        public List<ProductQueryModel> Products { get; set; }
+
     }
 }

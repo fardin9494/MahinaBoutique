@@ -1946,6 +1946,8 @@
       },
       "MahinaBoutique.Query/1.0.0": {
         "dependencies": {
+          "DiscountManagement.Infrastracture.EFCore": "1.0.0",
+          "InventoryManagement.Infrastracture.EfCore": "1.0.0",
           "ShopManagment.InfraStracture.EfCore": "1.0.0"
         },
         "runtime": {
