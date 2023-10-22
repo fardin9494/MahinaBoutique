@@ -17,9 +17,17 @@ namespace MahinaBoutique.Query.Contract.ProductCategory
 
         public string ImageAlt { get; set; }
 
+         public string Keyword { get; set; }
+
+        public string Description { get; set; }
+
+        public string MetaDescription { get; set; }
+
         public string ImageTitle { get; set; }
 
          public string Slug { get; set; }
+
+
 
         public List<ProductQueryModel> Products { get; set; }
 

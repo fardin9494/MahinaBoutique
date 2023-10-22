@@ -27,5 +27,7 @@ namespace MahinaBoutique.Query.Contract.Product
         public bool HaveDiscount { get; set; }
 
         public string PriceAfterDiscount { get; set; }
+
+        public string ExpireDiscountTime { get; set; }
     }
 }

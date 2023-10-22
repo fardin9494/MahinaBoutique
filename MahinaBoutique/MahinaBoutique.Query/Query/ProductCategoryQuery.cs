@@ -76,10 +76,7 @@ namespace MahinaBoutique.Query.Query
                             var PriceafterChange = Price - ((double)DiscountAmount);
                             product.PriceAfterDiscount = PriceafterChange.ToMoney();
                         }
-                        
-                       }
-                   
-
+                    }
                 }
             }
 
@@ -98,6 +95,50 @@ namespace MahinaBoutique.Query.Query
                     PictureTitle = x.PictureTitle,
                 }).ToList();
           
+        }
+
+        public ProductCategoryQueryModel GetCategoryWithProductBy(string slug)
+        {
+            var discount = _discount.CustomerDiscounts.Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now).
+                Select(x => new {x.ProductId,x.DiscountRate,x.EndDate}).ToList();
+            var inventory = _inventory.Inventory.Select(x => new {x.ProductId, x.UnitPrice}).ToList();
+            var category = _context.ProductCategories.Include(x => x.Products).
+                ThenInclude(x => x.Category).Select(x => new ProductCategoryQueryModel
+            {
+                Slug = x.Slug,
+                Id = x.Id,
+                Image = x.Image,
+                ImageAlt = x.ImageAlt,
+                ImageTitle = x.ImageTitle,
+                Name = x.Name,
+                Products = MapProduct(x.Products),
+                Description = x.Description,
+                Keyword = x.Keyword,
+                MetaDescription = x.MetaDescription,
+            }).FirstOrDefault(x => x.Slug == slug);
+
+
+            foreach(var product in category.Products)
+            {
+                var Inventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
+                var Discount= discount.FirstOrDefault(x => x.ProductId == product.Id);
+                if(Inventory != null)
+                {
+                    var price = Inventory.UnitPrice;
+                    product.Price = price.ToMoney();
+                    if(Discount != null)
+                    {
+                        var discountrate = Discount.DiscountRate;
+                        product.DiscountRate = discountrate;
+                        product.HaveDiscount = discountrate>0;
+                        var DiscountAmount = Math.Round((price*discountrate)/100);
+                        product.PriceAfterDiscount = (price - DiscountAmount).ToMoney();
+                        product.ExpireDiscountTime = Discount.EndDate.ToDiscountFormat();
+                    }
+
+                }
+            }
+            return category;
         }
     }
 }
