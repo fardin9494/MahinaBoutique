@@ -1,4 +1,5 @@
 ﻿using MahinaBoutique.Query.Contract.Slide;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.InfraStracture.EfCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace MahinaBoutique.Query.Query
                 PictureTitle = x.PictureTitle,
                 Text = x.Text,
                 Title = x.Title,
-                }).ToList();
+                }).AsNoTracking().ToList();
         }
     }
 }

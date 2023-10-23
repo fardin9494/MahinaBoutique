@@ -22,6 +22,12 @@ namespace MahinaBoutique.Query.Contract.Product
 
         public int DiscountRate { get; set; }
 
+        public string CategorySlug { get; set; }
+
+        public string Slug { get; set; }
+
+        public string ShortDescription {get; set;}
+
         public string Price { get; set; }
 
         public bool HaveDiscount { get; set; }

@@ -36,7 +36,7 @@ namespace MahinaBoutique.Query.Query
                 ImageAlt = x.ImageAlt,
                 ImageTitle = x.ImageTitle,
                 Name = x.Name,
-                }).ToList();
+                }).AsNoTracking().ToList();
 
 
         }
@@ -55,7 +55,7 @@ namespace MahinaBoutique.Query.Query
                 Name = x.Name,
                 Products = MapProduct(x.Products)
                 
-                }).ToList();
+                }).AsNoTracking().ToList();
 
 
             foreach (var category in categories)
@@ -115,7 +115,7 @@ namespace MahinaBoutique.Query.Query
                 Description = x.Description,
                 Keyword = x.Keyword,
                 MetaDescription = x.MetaDescription,
-            }).FirstOrDefault(x => x.Slug == slug);
+            }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
 
             foreach(var product in category.Products)
@@ -131,6 +131,7 @@ namespace MahinaBoutique.Query.Query
                         var discountrate = Discount.DiscountRate;
                         product.DiscountRate = discountrate;
                         product.HaveDiscount = discountrate>0;
+                        
                         var DiscountAmount = Math.Round((price*discountrate)/100);
                         product.PriceAfterDiscount = (price - DiscountAmount).ToMoney();
                         product.ExpireDiscountTime = Discount.EndDate.ToDiscountFormat();

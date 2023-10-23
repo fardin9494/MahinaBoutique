@@ -36,7 +36,7 @@ namespace MahinaBoutique.Query.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                }).OrderByDescending(x => x.Id).Take(6).ToList();
+                }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList();
 
             foreach(var product in products)
             {
@@ -61,6 +61,54 @@ namespace MahinaBoutique.Query.Query
 
             return products;
 
+        }
+
+        public List<ProductQueryModel> Search(string value)
+        {
+            var Discount = _discount.CustomerDiscounts.Where(x => x.EndDate > DateTime.Now && x.StartDate < DateTime.Now).Select(x => new {x.ProductId,x.DiscountRate,x.EndDate}).ToList();
+            var inventory = _inventory.Inventory.Select(x => new {x.ProductId,x.UnitPrice}).ToList();
+            var query = _context.Products.Include(x => x.Category).Select(x => new ProductQueryModel{
+                Category = x.Category.Name,
+                CategorySlug = x.Category.Slug,
+                Id = x.Id,
+                Name = x.Name,
+                ShortDescription = x.ShortDescription,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                Slug = x.Slug,
+                }).AsNoTracking();
+
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+              query =  query.Where(x => x.Name.Contains(value)||x.ShortDescription.Contains(value));
+            }
+
+            var products = query.OrderByDescending(x => x.Id).ToList();
+
+            foreach(var product in products)
+            {
+                var unitPrice = inventory.FirstOrDefault(x => x.ProductId == product.Id);
+                var discountRate = Discount.FirstOrDefault(x => x.ProductId == product.Id);
+                if(unitPrice != null)
+                {
+                    var price = unitPrice.UnitPrice;
+                    product.Price = price.ToMoney();
+                    if(discountRate != null)
+                    {
+                        var discount = discountRate.DiscountRate;
+                        product.HaveDiscount = discount>0;
+                        product.DiscountRate = discount;
+                        product.ExpireDiscountTime = discountRate.EndDate.ToDiscountFormat();
+                        var DiscountAmount = Math.Round((price*discount)/100);
+                        product.PriceAfterDiscount = (price - DiscountAmount).ToMoney();
+                    }
+
+                }
+                    
+            }
+
+            return products;
         }
     }
 }

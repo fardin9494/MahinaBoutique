@@ -999,7 +999,7 @@ select {
 	position: absolute;
 	z-index: 9999;
 	top: 100%;
-	right: 0;
+	left: 0;
 	display: none;
 	width: 300px;
 	margin-top: 34px;
