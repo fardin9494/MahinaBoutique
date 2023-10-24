@@ -11,5 +11,7 @@ namespace _0_SelfBuildFramwork.Application
         public const string DupplicatedMessage = "امکان ثبت محصول تکراری وجود ندارد";
 
         public const string NullRecordMessage = "رکورد مورد نظر یافت نشد";
+
+       
     }
 }

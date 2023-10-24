@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,7 +16,9 @@ namespace ShopManagement.Application.Contract.ProductCategory
 
         public string Description { get; set; }
 
-        public string Image { get; set; }
+        [MaxSizeVallidation(3 * 1024 * 1024,ErrorMessage = ValidationMessages.MaxSizeMessage)]
+        [ExtensionValidation(new string[] {".jpeg",".jpg",".png"}, ErrorMessage = ValidationMessages.InvalidExtention )]
+        public IFormFile Image { get; set; }
 
         public string ImageAlt { get; set; }
 

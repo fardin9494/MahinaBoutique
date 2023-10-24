@@ -52,7 +52,10 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         {
             Name = name;
             Description = description;
-            Image = image;
+            if (!string.IsNullOrEmpty(image))
+            {
+                Image = image;
+            }
             ImageAlt = imageAlt;
             ImageTitle = imageTitle;
             Keyword = keyword;

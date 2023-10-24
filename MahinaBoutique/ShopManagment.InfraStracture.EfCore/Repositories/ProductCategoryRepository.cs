@@ -23,7 +23,7 @@ namespace ShopManagement.InfraStracture.EfCore.Repositories
                 Description = x.Description,
                 Slug = x.Slug,
                 Id = x.Id,
-                Image = x.Image,
+               // Image = " ",
                 ImageAlt = x.ImageAlt,
                 ImageTitle = x.ImageTitle,
                 Keyword = x.Keyword,

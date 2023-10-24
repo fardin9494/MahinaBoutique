@@ -110,5 +110,11 @@ namespace _0_SelfBuildFramwork.Application
         {
             return $"{date.Year:0000}-{date.Month:00}-{date.Day:00}-{date.Hour:00}-{date.Minute:00}-{date.Second:00}";
         }
+
+        
+        public static string ToShortFileName(this DateTime date)
+        {
+            return $"{date.Month}{date.Day}{date.Hour}{date.Minute}{date.Second}";
+        }
     }
 }

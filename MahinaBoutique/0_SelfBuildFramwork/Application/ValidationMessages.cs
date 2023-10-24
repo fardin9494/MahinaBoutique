@@ -9,5 +9,9 @@ namespace _0_SelfBuildFramwork.Application
     public class ValidationMessages
     {
         public const string Required = "پر کردن این فیلد الزامیست بععععععله";
+
+         public const string MaxSizeMessage = "حجم فایل مورد نظر بیشتر از حد مجاز هست";
+
+        public const string InvalidExtention = "این نوع فایل مجاز نیست";
     }
 }
