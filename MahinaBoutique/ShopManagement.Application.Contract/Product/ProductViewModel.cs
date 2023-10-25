@@ -15,5 +15,7 @@
         public string Category { get; set; }
 
         public long CategoryId { get; set; }
+
+        public string CategorySlug { get; set; }
     }
 }

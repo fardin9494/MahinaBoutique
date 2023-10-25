@@ -12,11 +12,13 @@ namespace ShopManagement.Application
 {
     public class ProductApplication : IProductApplication
     {
+        private readonly IFileUploader _fileUploader;
         private readonly IProductRepository _productRepository;
 
-        public ProductApplication(IProductRepository productRepository)
+        public ProductApplication(IProductRepository productRepository, IFileUploader fileUploader)
         {
             _productRepository = productRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProduct command)
@@ -27,8 +29,12 @@ namespace ShopManagement.Application
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
             var slug = GenerateSlug.Slugify(command.Slug);
+            var categoryslug = _productRepository.GetProductCategorySlug(command.CategoryId);
+            var folder = $"{categoryslug}/{command.Slug}";
+            var picturePath = _fileUploader.Upload(command.Picture,folder);
+            
             var product = new Product(command.Name,command.Code,
-                                        command.Picture,command.PictureTitle,
+                                        picturePath,command.PictureTitle,
                                         command.PictureAlt,command.ShortDescription,command.Description,
                                         command.MetaDescription,command.Keywords,slug,command.CategoryId);
 
@@ -40,7 +46,7 @@ namespace ShopManagement.Application
         public OperationResult Edit(EditProduct command)
         {
             var operation = new OperationResult();
-            if(_productRepository.GetBy(command.Id) == null)
+            if(_productRepository.GetWithCategory(command.Id) == null)
             {
                 return operation.Failed(ApplicationMessages.NullRecordMessage);
             }
@@ -48,10 +54,15 @@ namespace ShopManagement.Application
             {
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
-            var product = _productRepository.GetBy(command.Id);
+            var product = _productRepository.GetWithCategory(command.Id);
+            
             var slug = GenerateSlug.Slugify(command.Slug);
+            var categoryslug = product.Category.Slug;
+            var ImageFolder = $"{categoryslug}/{command.Slug}";
+            var image = _fileUploader.Upload(command.Picture,ImageFolder);
+
             product.Edit(command.Name, command.Code,
-                                command.Picture,command.PictureTitle,
+                                image,command.PictureTitle,
                                 command.PictureAlt,command.ShortDescription,command.Description,
                                 command.MetaDescription,command.Keywords,slug,command.CategoryId);
             _productRepository.SaveChanges();

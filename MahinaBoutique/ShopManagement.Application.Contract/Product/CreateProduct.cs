@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using Microsoft.AspNetCore.Http;
 using ShopManagement.Application.Contract.ProductCategory;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,10 @@ namespace ShopManagement.Application.Contract.Product
         [Required (ErrorMessage = ValidationMessages.Required)]
         public string Code { get; set; }
 
-        public string Picture { get; set; }
+
+        [MaxSizeVallidation(3 * 1024 * 1024,ErrorMessage = ValidationMessages.MaxSizeMessage)]
+        [ExtensionValidation(new string[] {".jpeg",".jpg",".png"}, ErrorMessage = ValidationMessages.InvalidExtention )]
+        public IFormFile Picture { get; set; }
 
         public string PictureTitle { get; set; }
 

@@ -12,6 +12,10 @@ namespace ShopManagement.Domain.ProductAgg
     {
         EditProduct GetDetails(long id);
 
+        string GetProductCategorySlug(long productcategoryid);
+
+        Product GetWithCategory(long id);
+
         List<ProductViewModel> Search(ProductSearchModel searchModel);
 
         List<ProductViewModel> GetProducts();

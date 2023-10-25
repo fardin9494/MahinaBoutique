@@ -28,8 +28,11 @@ namespace ShopManagement.Application
             }
             
             var Slug = command.Slug.Slugify();
+            var folder = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Image,folder);
+
             var category = new ProductCategory(command.Name,command.Description,
-                "",command.ImageAlt,command.ImageTitle,command.Keyword
+                fileName,command.ImageAlt,command.ImageTitle,command.Keyword
                 ,command.MetaDescription,Slug);
             _productCategoryRepository.Create(category);
             _productCategoryRepository.SaveChanges();

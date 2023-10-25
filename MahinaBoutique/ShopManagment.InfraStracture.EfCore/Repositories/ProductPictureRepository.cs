@@ -27,7 +27,6 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
             return _shopContext.ProductPictures.Select(x => new EditProductPicture
             {
                 Id = x.Id,
-                Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 ProductId = x.ProductId,
@@ -35,6 +34,10 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public ProductPicture GetWithCategory(long id)
+        {
+            return _shopContext.ProductPictures.Include(x => x.Product).ThenInclude(x => x.Category).FirstOrDefault(x => x.Id == id);
+        }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchmodel)
         {

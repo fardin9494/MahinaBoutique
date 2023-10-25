@@ -1,6 +1,7 @@
 ﻿using _0_SelfBuildFramwork.Application;
 using ShopManagement.Application.Contract.Product;
 using ShopManagement.Application.Contract.ProductPicture;
+using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using System;
 using System.Collections.Generic;
@@ -12,21 +13,26 @@ namespace ShopManagement.Application
 {
     public class ProductPictureApplication : IProductPictureApplication
     {
+        private readonly IFileUploader _fileUploader;
         private readonly IProductPictureRepository _pictureRepository;
+        private readonly IProductRepository _productRepository;
 
-        public ProductPictureApplication(IProductPictureRepository pictureRepository)
+        public ProductPictureApplication(IProductPictureRepository pictureRepository, IFileUploader fileUploader, IProductRepository productRepository)
         {
             _pictureRepository = pictureRepository;
+            _fileUploader = fileUploader;
+            _productRepository = productRepository;
         }
 
         public OperationResult Create(CreateProductPicture command)
         {
             var operation = new OperationResult();
-            if(_pictureRepository.IsExist(x=> x.Picture == command.Picture && x.ProductId == command.ProductId))
-            {
-                return operation.Failed(ApplicationMessages.DupplicatedMessage);
-            }
-            var productPicture = new ProductPicture(command.Picture,command.PictureAlt,command.PictureTitle,command.ProductId);
+            
+            var product = _productRepository.GetWithCategory(command.ProductId);
+            var folder = $"{product.Category.Slug}/{product.Slug}";
+            var Image = _fileUploader.Upload(command.Picture,folder);
+
+            var productPicture = new ProductPicture(Image,command.PictureAlt,command.PictureTitle,command.ProductId);
             _pictureRepository.Create(productPicture);
             _pictureRepository.SaveChanges();
             return operation.Succedded();
@@ -37,17 +43,16 @@ namespace ShopManagement.Application
         public OperationResult Edit(EditProductPicture command)
         {
             var operation = new OperationResult();
-            var selectedProductPic = _pictureRepository.GetBy(command.Id);
+            var selectedProductPic = _pictureRepository.GetWithCategory(command.Id);
             if(selectedProductPic == null)
             {
                 return operation.Failed(ApplicationMessages.NullRecordMessage);
             }
-            if(_pictureRepository.IsExist(x=> x.Picture == command.Picture && x.ProductId == command.ProductId && x.Id != command.Id))
-            {
-                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
-            }
+            
+            var ImageFolder = $"{selectedProductPic.Product.Category.Slug}/{selectedProductPic.Product.Slug}";
+            var Image = _fileUploader.Upload(command.Picture,ImageFolder);
 
-            selectedProductPic.Edit(command.Picture,command.PictureAlt,command.PictureTitle,command.ProductId);
+            selectedProductPic.Edit(Image,command.PictureAlt,command.PictureTitle,command.ProductId);
             _pictureRepository.SaveChanges();
             return operation.Succedded();
         }

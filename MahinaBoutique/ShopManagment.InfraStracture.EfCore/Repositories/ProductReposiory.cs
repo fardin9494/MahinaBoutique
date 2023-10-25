@@ -35,7 +35,6 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
                 Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,
                 Name = x.Name,
-                Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
             }).FirstOrDefault(x => x.Id == id);
@@ -48,6 +47,11 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
                 Name = x.Name,
                 Id = x.Id,
             }).ToList();
+        }
+
+        public string GetProductCategorySlug(long Categoryid)
+        {
+            return _shopContext.Products.Include(x  => x.Category).Select(x => new {x.CategoryId,x.Slug}).FirstOrDefault(x => x.CategoryId == Categoryid).Slug;
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
@@ -78,6 +82,11 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
             }
 
             return query.OrderByDescending(x=> x.Id).ToList();
+        }
+
+        public Product GetWithCategory(long id)
+        {
+            return _shopContext.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
         }
     }
 }
