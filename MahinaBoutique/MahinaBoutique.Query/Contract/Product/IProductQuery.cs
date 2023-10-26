@@ -9,5 +9,7 @@ namespace MahinaBoutique.Query.Contract.Product
         List<ProductQueryModel> GetArrivals();
 
         List<ProductQueryModel> Search(string value);
+
+        ProductQueryModel GetDeatail(string slug);
     }
 }

@@ -93,6 +93,8 @@ namespace MahinaBoutique.Query.Query
                     Picture = x.Picture,
                     PictureAlt= x.PictureAlt,
                     PictureTitle = x.PictureTitle,
+                    Slug = x.Slug,
+                    CategorySlug = x.Category.Slug,
                 }).ToList();
           
         }

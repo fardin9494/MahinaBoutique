@@ -3,6 +3,7 @@ using DiscountManagement.Infrastracture.EFCore;
 using InventoryManagement.Infrastracture.EfCore;
 using MahinaBoutique.Query.Contract.Product;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.InfraStracture.EfCore;
 using System;
 using System.Collections.Generic;
@@ -33,9 +34,11 @@ namespace MahinaBoutique.Query.Query
                 Category = x.Category.Name,
                 Id = x.Id,
                 Name = x.Name,
+                Slug = x.Slug,
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
+                CategorySlug = x.Category.Slug,
                 }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList();
 
             foreach(var product in products)
@@ -61,6 +64,59 @@ namespace MahinaBoutique.Query.Query
 
             return products;
 
+        }
+
+        public ProductQueryModel GetDeatail(string slug)
+        {
+            var discount = _discount.CustomerDiscounts.Where(x => x.EndDate > DateTime.Now && x.StartDate < DateTime.Now).Select(x => new {x.ProductId,x.DiscountRate,x.EndDate}).ToList();
+            var inventory = _inventory.Inventory.Select(x => new {x.ProductId,x.UnitPrice,x.InStock}).ToList();
+            var Product = _context.Products.Include(x => x.Category).Include(x => x.Pictures).Select(x => new ProductQueryModel{
+                Category = x.Category.Name,
+                CategorySlug = x.Category.Slug,
+                Id = x.Id,
+                Name = x.Name,
+                ShortDescription = x.ShortDescription,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                Slug = x.Slug,
+                Code =x.Code,
+                Description = x.Description,
+                Keywords = x.Keywords,
+                ProductPictures = MapPictures(x.Pictures),
+                MetaDescription = x.MetaDescription,
+                }).FirstOrDefault(x => x.Slug == slug);
+
+             var Inventory = inventory.FirstOrDefault(x => x.ProductId == Product.Id);
+             var Discount= discount.FirstOrDefault(x => x.ProductId == Product.Id);
+                if(Inventory != null)
+                {
+                    var price = Inventory.UnitPrice;
+                    Product.Price = price.ToMoney();
+                    Product.IsInStock = Inventory.InStock;
+                    if(Discount != null)
+                    {
+                        var discountrate = Discount.DiscountRate;
+                        Product.DiscountRate = discountrate;
+                        Product.HaveDiscount = discountrate>0;
+                        
+                        var DiscountAmount = Math.Round((price*discountrate)/100);
+                        Product.PriceAfterDiscount = (price - DiscountAmount).ToMoney();
+                        Product.ExpireDiscountTime = Discount.EndDate.ToDiscountFormat();
+                    }
+
+                }
+
+            return Product;
+        }
+
+        private static List<ProductPictureQueryModel> MapPictures(List<ProductPicture> pictures)
+        {
+           return pictures.Where(x => !x.IsRemoved).Select(x => new ProductPictureQueryModel{
+               Picture = x.Picture,
+               PictureAlt = x.PictureAlt,
+               PictureTitle = x.PictureTitle,
+               }).ToList();
         }
 
         public List<ProductQueryModel> Search(string value)

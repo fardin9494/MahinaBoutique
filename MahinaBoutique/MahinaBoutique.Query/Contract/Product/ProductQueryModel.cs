@@ -35,5 +35,17 @@ namespace MahinaBoutique.Query.Contract.Product
         public string PriceAfterDiscount { get; set; }
 
         public string ExpireDiscountTime { get; set; }
+
+        public string Code { get; set; }
+
+        public string Description { get; set; }
+
+        public string MetaDescription { get; set; }
+
+        public string Keywords { get; set; }
+       
+        public bool IsInStock { get; set; }
+
+        public List<ProductPictureQueryModel> ProductPictures { get; set; }
     }
 }
