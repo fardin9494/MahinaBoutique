@@ -23,7 +23,7 @@ namespace BlogManagement.Infrastracture.EfCore.Mapping
             builder.Property(x => x.ImageTitle).HasMaxLength(200);
             builder.Property(x => x.Keywords).HasMaxLength(100).IsRequired();
             builder.Property(x => x.MetaDescription).HasMaxLength(200).IsRequired();
-            builder.Property(x => x.Description).HasMaxLength(1000);
+            builder.Property(x => x.Description).HasMaxLength(1000).IsRequired();
             
         }
     }

@@ -8,6 +8,10 @@
 
         public int ShowOrder { get; set; }
 
+        public string CreationDate { get; set; }
+
+        public int ArticleCount { get; set; }
+
         public string Description { get; set; }
 
         public string Image { get; set; }

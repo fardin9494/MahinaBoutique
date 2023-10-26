@@ -1,4 +1,5 @@
-﻿using _0_SelfBuildFramwork.Infrastracture;
+﻿using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Infrastracture;
 using BlogManagement.Application.Contract.ArticleCategory;
 using BlogManagement.Domain.ArticleCategoryAgg;
 using System;
@@ -39,12 +40,13 @@ namespace BlogManagement.Infrastracture.EfCore.Repositories
             var Query = _context.ArticleCategories.Select(x => new ArticleCategoryViewModel{
                 ShowOrder = x.ShowOrder,
                 Description = x.Description,
+                CreationDate = x.CreationDate.ToFarsi(),
                 Id = x.Id,
                 Image = x.Image,
                 Name = x.Name,
                 });
 
-            if(search != null)
+            if(search.Name != null)
             {
                 Query = Query.Where(x => x.Name == search.Name);
             }

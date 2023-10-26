@@ -221,3 +221,16 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\Micros
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Pages\Product.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Application.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Infrastracture.Config.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Infrastracture.Config.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Application.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\BlogManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategory\Create.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategory\Edit.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategory\Index.cshtml.g.cs
