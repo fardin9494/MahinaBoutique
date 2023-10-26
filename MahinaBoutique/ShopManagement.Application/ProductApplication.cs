@@ -31,7 +31,7 @@ namespace ShopManagement.Application
             var slug = GenerateSlug.Slugify(command.Slug);
             var categoryslug = _productRepository.GetProductCategorySlug(command.CategoryId);
             var folder = $"{categoryslug}/{command.Slug}";
-            var picturePath = _fileUploader.Upload(command.Picture,folder);
+            var picturePath = _fileUploader.Upload(command.Picture,folder,true);
             
             var product = new Product(command.Name,command.Code,
                                         picturePath,command.PictureTitle,
@@ -59,7 +59,7 @@ namespace ShopManagement.Application
             var slug = GenerateSlug.Slugify(command.Slug);
             var categoryslug = product.Category.Slug;
             var ImageFolder = $"{categoryslug}/{command.Slug}";
-            var image = _fileUploader.Upload(command.Picture,ImageFolder);
+            var image = _fileUploader.Upload(command.Picture,ImageFolder,true);
 
             product.Edit(command.Name, command.Code,
                                 image,command.PictureTitle,

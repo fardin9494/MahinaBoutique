@@ -18,13 +18,26 @@ namespace ServiceHost
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public string Upload(IFormFile file, string folder)
+
+        public string Upload(IFormFile file, string folder , bool ProductOrArticle)
         {
             if(file == null)
             {
                 return "";
             }
-           var DirectoryPath = $"{_webHostEnvironment.WebRootPath}//ProductPictures//{folder}";
+            string Basefolder;
+
+            if (ProductOrArticle)
+            {
+                Basefolder = "ProductPictures";
+            }
+            else
+            {
+                Basefolder = "ArticlePictures";
+            }
+
+
+           var DirectoryPath = $"{_webHostEnvironment.WebRootPath}//{Basefolder}//{folder}";
 
             if (!Directory.Exists(DirectoryPath))
             {

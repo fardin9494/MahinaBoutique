@@ -30,7 +30,7 @@ namespace ShopManagement.Application
             
             var product = _productRepository.GetWithCategory(command.ProductId);
             var folder = $"{product.Category.Slug}/{product.Slug}";
-            var Image = _fileUploader.Upload(command.Picture,folder);
+            var Image = _fileUploader.Upload(command.Picture,folder,true);
 
             var productPicture = new ProductPicture(Image,command.PictureAlt,command.PictureTitle,command.ProductId);
             _pictureRepository.Create(productPicture);
@@ -50,7 +50,7 @@ namespace ShopManagement.Application
             }
             
             var ImageFolder = $"{selectedProductPic.Product.Category.Slug}/{selectedProductPic.Product.Slug}";
-            var Image = _fileUploader.Upload(command.Picture,ImageFolder);
+            var Image = _fileUploader.Upload(command.Picture,ImageFolder,true);
 
             selectedProductPic.Edit(Image,command.PictureAlt,command.PictureTitle,command.ProductId);
             _pictureRepository.SaveChanges();

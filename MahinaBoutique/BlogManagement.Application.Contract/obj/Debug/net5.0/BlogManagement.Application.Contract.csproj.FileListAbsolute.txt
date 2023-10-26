@@ -1,0 +1,15 @@
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\bin\Debug\net5.0\BlogManagement.Application.Contract.deps.json
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\bin\Debug\net5.0\ref\BlogManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\bin\Debug\net5.0\BlogManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\bin\Debug\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.AssemblyInfo.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\ref\BlogManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.pdb

@@ -9,6 +9,6 @@ namespace _0_SelfBuildFramwork.Application
 {
     public interface IFileUploader
     {
-        string Upload(IFormFile file,string folder);
+        string Upload(IFormFile file,string folder,bool ProductOrArticle);
     }
 }

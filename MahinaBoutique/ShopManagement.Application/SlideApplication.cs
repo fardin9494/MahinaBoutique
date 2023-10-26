@@ -25,7 +25,7 @@ namespace ShopManagement.Application
             var operation = new OperationResult();
 
             var folder = $"Slides/{command.Title}";
-            var Picture = _fileUploader.Upload(command.Picture,folder);
+            var Picture = _fileUploader.Upload(command.Picture,folder,true);
 
             var slide = new Slide(Picture,command.PictureAlt,command.PictureTitle,command.Heading,command.Title,command.Text,command.ButtonText,command.Link);
             _slideRepository.Create(slide);
@@ -44,7 +44,7 @@ namespace ShopManagement.Application
             }
 
             var folder = $"Slides/{command.Title}";
-            var Picture = _fileUploader.Upload(command.Picture,folder);
+            var Picture = _fileUploader.Upload(command.Picture,folder,true);
             SelSlide.Edit(Picture,command.PictureAlt,command.PictureTitle,command.Heading,command.Title,command.Text,command.ButtonText,command.Link);
             _slideRepository.SaveChanges();
             return operation.Succedded();

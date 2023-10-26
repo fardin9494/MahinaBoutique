@@ -29,7 +29,7 @@ namespace ShopManagement.Application
             
             var Slug = command.Slug.Slugify();
             var folder = $"{command.Slug}";
-            var fileName = _fileUploader.Upload(command.Image,folder);
+            var fileName = _fileUploader.Upload(command.Image,folder,true);
 
             var category = new ProductCategory(command.Name,command.Description,
                 fileName,command.ImageAlt,command.ImageTitle,command.Keyword
@@ -56,7 +56,7 @@ namespace ShopManagement.Application
 
             var slug = command.Slug.Slugify();
             var folder = $"{command.Slug}";
-            var fileName = _fileUploader.Upload(command.Image,folder);
+            var fileName = _fileUploader.Upload(command.Image,folder,true);
 
             product.Edit(command.Name,command.Description,fileName,
                 command.ImageAlt,command.ImageTitle,command.Keyword,
