@@ -1,0 +1,20 @@
+﻿using _0_SelfBuildFramwork.Application;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BlogManagement.Application.Contract.Article
+{
+    public interface IArticleApplication
+    {
+        OperationResult Create(CreateArticle command);
+
+        OperationResult Edit(EditArticle command);
+
+        EditArticle GetDetails(long id);
+
+        List<ArticleViewModel> Search(ArticleSearchModel search);
+    }
+}

@@ -1,5 +1,7 @@
 ﻿using BlogManagement.Application;
+using BlogManagement.Application.Contract.Article;
 using BlogManagement.Application.Contract.ArticleCategory;
+using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
 using BlogManagement.Infrastracture.EfCore;
 using BlogManagement.Infrastracture.EfCore.Repositories;
@@ -15,6 +17,9 @@ namespace BlogManagement.Infrastracture.Config
         {
             service.AddTransient<IArticleCategoryApplication ,ArticleCategoryApplication>();
             service.AddTransient<IArticleCategoryRepository ,ArticleCategoryRepository>();
+            service.AddTransient<IArticleApplication ,ArticleApplication>();
+            service.AddTransient<IArticleRepository ,ArticleRepository>();
+            
 
             service.AddDbContext<BlogContext>(x => x.UseSqlServer(ConnectionString));
         }

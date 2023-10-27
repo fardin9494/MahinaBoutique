@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Domain;
+using BlogManagement.Domain.ArticleAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,8 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
         public string MetaDescription { get; private set; }
 
         public string CanonicalAddress { get; private set; }
+
+        public List<Article> Articles { get; private set; }
 
         public ArticleCategory(string name, int showOrder, string description, string image, string imageTitle, string imageAlt, string keywords, string metaDescription, string canonicalAddress, string slug)
         {
