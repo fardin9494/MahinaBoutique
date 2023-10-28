@@ -1,6 +1,7 @@
 ﻿using _0_Framework.Application;
 using _0_SelfBuildFramwork.Application;
 using BlogManagement.Application.Contract.Article;
+using BlogManagement.Application.Contract.ArticleCategory;
 using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
 using System;
@@ -54,7 +55,7 @@ namespace BlogManagement.Application
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
             var slug = command.Slug.Slugify();
-            string categoryslug = Article.Category.Slug;
+            var categoryslug = _repository.GetSlug(command.CategoryId);
             var imagePath = _fileUploader.Upload(command.Picture,$"{categoryslug}/{slug}",false);
 
             Article.Edit(command.Title,command.ShortDescription,command.Description,imagePath,command.PictureAlt,
@@ -63,6 +64,11 @@ namespace BlogManagement.Application
 
             _repository.SaveChanges();
             return operation.Succedded();
+        }
+
+        public List<ArticleCategoryViewModel> GetArticleCategories()
+        {
+            return _repository.GetArticleCategories();
         }
 
         public EditArticle GetDetails(long id)

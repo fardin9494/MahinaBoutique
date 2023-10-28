@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using BlogManagement.Application.Contract.ArticleCategory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace BlogManagement.Application.Contract.Article
         OperationResult Edit(EditArticle command);
 
         EditArticle GetDetails(long id);
+
+        List<ArticleCategoryViewModel> GetArticleCategories();
 
         List<ArticleViewModel> Search(ArticleSearchModel search);
     }

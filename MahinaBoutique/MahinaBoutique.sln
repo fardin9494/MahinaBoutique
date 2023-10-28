@@ -71,15 +71,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Domain", "Bl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Application", "BM.Application", "{A5E09B5E-205B-4BB6-9952-18B0385B1A2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Application.Contract", "BlogManagement.Application.Contract\BlogManagement.Application.Contract.csproj", "{5A1C03CA-9B7D-4AA4-8265-3BF2323EB093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Application.Contract", "BlogManagement.Application.Contract\BlogManagement.Application.Contract.csproj", "{5A1C03CA-9B7D-4AA4-8265-3BF2323EB093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Application", "BlogManagement.Application\BlogManagement.Application.csproj", "{18F2D5FB-5C46-471F-931A-644E49000A71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Application", "BlogManagement.Application\BlogManagement.Application.csproj", "{18F2D5FB-5C46-471F-931A-644E49000A71}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Infrastracture", "BM.Infrastracture", "{9F4A3EA2-E528-4B29-B6C9-40266D3F36D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Infrastracture.EfCore", "BlogManagement.Infrastracture.EfCore\BlogManagement.Infrastracture.EfCore.csproj", "{23AC743B-635D-48EA-B548-AE6E91685B86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infrastracture.EfCore", "BlogManagement.Infrastracture.EfCore\BlogManagement.Infrastracture.EfCore.csproj", "{23AC743B-635D-48EA-B548-AE6E91685B86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Infrastracture.Config", "BlogManagement.Infrastracture.Config\BlogManagement.Infrastracture.Config.csproj", "{44ABF17D-BCC4-4322-BF36-9068E9E79C53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infrastracture.Config", "BlogManagement.Infrastracture.Config\BlogManagement.Infrastracture.Config.csproj", "{44ABF17D-BCC4-4322-BF36-9068E9E79C53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

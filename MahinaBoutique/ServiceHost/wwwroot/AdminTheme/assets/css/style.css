@@ -3464,6 +3464,14 @@ th { text-align: right; }
     }
 }
 
+#scrollable {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
 @keyframes glowing {
     0% {
         background-color: #B20000;

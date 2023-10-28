@@ -1,6 +1,7 @@
 ﻿using _0_SelfBuildFramwork.Application;
 using _0_SelfBuildFramwork.Infrastracture;
 using BlogManagement.Application.Contract.Article;
+using BlogManagement.Application.Contract.ArticleCategory;
 using BlogManagement.Domain.ArticleAgg;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,6 +19,11 @@ namespace BlogManagement.Infrastracture.EfCore.Repositories
         public ArticleRepository(BlogContext context) : base (context)
         {
             _context = context;
+        }
+
+        public List<ArticleCategoryViewModel> GetArticleCategories()
+        {
+            return _context.ArticleCategories.Select(x => new ArticleCategoryViewModel{Id = x.Id,Name = x.Name}).ToList();
         }
 
         public EditArticle GetDetails(long id)
@@ -41,7 +47,7 @@ namespace BlogManagement.Infrastracture.EfCore.Repositories
 
         public string GetSlug(long CategoryId)
         {
-            return _context.Articles.Include(x => x.Category).FirstOrDefault(x => x.CategoryId == CategoryId).Category.Slug;
+            return _context.ArticleCategories.FirstOrDefault(x => x.Id == CategoryId).Slug;
         }
 
         public List<ArticleViewModel> Search(ArticleSearchModel search)
