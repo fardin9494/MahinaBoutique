@@ -8,6 +8,8 @@ namespace MahinaBoutique.Query.Contract.Article
 {
     public interface IArticleQuery
     {
+        ArticleQueryModel GetArticle(string Slug);
+
         List<ArticleQueryModel> LatestArticles();
     }
 }

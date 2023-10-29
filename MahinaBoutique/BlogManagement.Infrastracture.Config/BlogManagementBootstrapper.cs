@@ -6,6 +6,7 @@ using BlogManagement.Domain.ArticleCategoryAgg;
 using BlogManagement.Infrastracture.EfCore;
 using BlogManagement.Infrastracture.EfCore.Repositories;
 using MahinaBoutique.Query.Contract.Article;
+using MahinaBoutique.Query.Contract.ArticleCategory;
 using MahinaBoutique.Query.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +22,7 @@ namespace BlogManagement.Infrastracture.Config
             service.AddTransient<IArticleApplication ,ArticleApplication>();
             service.AddTransient<IArticleRepository ,ArticleRepository>();
             service.AddTransient<IArticleQuery ,ArticleQuery>();
+            service.AddTransient<IArticleCategoryQuery ,ArticleCategoryQuery>();
 
             
 

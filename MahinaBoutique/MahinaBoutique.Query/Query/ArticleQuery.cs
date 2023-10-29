@@ -19,6 +19,27 @@ namespace MahinaBoutique.Query.Query
             _blogcontext = blogcontext;
         }
 
+        public ArticleQueryModel GetArticle(string Slug)
+        {
+            return _blogcontext.Articles.Include(x => x.Category).Select(x => new ArticleQueryModel{
+                Slug = x.Slug,
+                ShortDescription = x.ShortDescription,
+                CategorySlug = x.Category.Slug,
+                CanonicalAddress = x.CanonicalAddress,
+                Category = x.Category.Name,
+                Description = x.Description,
+                Title = x.Title,
+                Keywords = x.Keywords,
+                MetaDescription = x.MetaDescription,
+                Picture = x.Picture,
+                CategoryId = x.CategoryId,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                PublishDate = x.PublishDate.ToFarsi(),
+                
+                }).FirstOrDefault(x => x.Slug == Slug);
+        }
+
         public List<ArticleQueryModel> LatestArticles()
         {
             return _blogcontext.Articles.Where(x => x.PublishDate >= DateTime.Now).Include(x => x.Category).Select(x => new ArticleQueryModel{
@@ -28,9 +49,6 @@ namespace MahinaBoutique.Query.Query
                 CategorySlug = x.Category.Slug,
                 Category = x.Category.Name,
                 CategoryId = x.CategoryId,
-                Description = x.Description,
-                Keywords = x.Keywords,
-                MetaDescription = x.MetaDescription,
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
