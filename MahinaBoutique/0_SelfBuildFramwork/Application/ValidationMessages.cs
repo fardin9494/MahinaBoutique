@@ -13,5 +13,7 @@ namespace _0_SelfBuildFramwork.Application
          public const string MaxSizeMessage = "حجم فایل مورد نظر بیشتر از حد مجاز هست";
 
         public const string InvalidExtention = "این نوع فایل مجاز نیست";
+
+        public const string MaxCharacterString = "مقدار مجاز متن کوتاه تر است";
     }
 }

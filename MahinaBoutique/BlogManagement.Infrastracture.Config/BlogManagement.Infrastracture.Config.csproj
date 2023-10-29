@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BlogManagement.Application\BlogManagement.Application.csproj" />
     <ProjectReference Include="..\BlogManagement.Infrastracture.EfCore\BlogManagement.Infrastracture.EfCore.csproj" />
+    <ProjectReference Include="..\MahinaBoutique.Query\MahinaBoutique.Query.csproj" />
   </ItemGroup>
 
 </Project>

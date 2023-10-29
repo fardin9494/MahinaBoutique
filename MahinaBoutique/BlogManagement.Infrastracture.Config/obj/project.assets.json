@@ -1644,6 +1644,153 @@
         "runtime": {
           "bin/placeholder/BlogManagement.Infrastracture.EfCore.dll": {}
         }
+      },
+      "DiscountManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastracture.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Infrastracture.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Infrastracture.EFCore.dll": {}
+        }
+      },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastracture.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Infrastracture.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Infrastracture.EfCore.dll": {}
+        }
+      },
+      "MahinaBoutique.Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Infrastracture.EfCore": "1.0.0",
+          "DiscountManagement.Infrastracture.EFCore": "1.0.0",
+          "InventoryManagement.Infrastracture.EfCore": "1.0.0",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MahinaBoutique.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MahinaBoutique.Query.dll": {}
+        }
+      },
+      "ShopManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Application.Contract.dll": {}
+        }
+      },
+      "ShopManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "ShopManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
+      },
+      "ShopManagment.InfraStracture.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagment.InfraStracture.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagment.InfraStracture.EfCore.dll": {}
+        }
       }
     }
   },
@@ -6026,12 +6173,63 @@
       "type": "project",
       "path": "../BlogManagement.Infrastracture.EfCore/BlogManagement.Infrastracture.EfCore.csproj",
       "msbuildProject": "../BlogManagement.Infrastracture.EfCore/BlogManagement.Infrastracture.EfCore.csproj"
+    },
+    "DiscountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Application.Contract/DiscountManagement.Application.Contract.csproj",
+      "msbuildProject": "../DiscountManagement.Application.Contract/DiscountManagement.Application.Contract.csproj"
+    },
+    "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj",
+      "msbuildProject": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+    },
+    "DiscountManagement.Infrastracture.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Infrastracture.EFCore/DiscountManagement.Infrastracture.EFCore.csproj",
+      "msbuildProject": "../DiscountManagement.Infrastracture.EFCore/DiscountManagement.Infrastracture.EFCore.csproj"
+    },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
+      "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
+    },
+    "InventoryManagement.Infrastracture.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Infrastracture.EfCore/InventoryManagement.Infrastracture.EfCore.csproj",
+      "msbuildProject": "../InventoryManagement.Infrastracture.EfCore/InventoryManagement.Infrastracture.EfCore.csproj"
+    },
+    "MahinaBoutique.Query/1.0.0": {
+      "type": "project",
+      "path": "../MahinaBoutique.Query/MahinaBoutique.Query.csproj",
+      "msbuildProject": "../MahinaBoutique.Query/MahinaBoutique.Query.csproj"
+    },
+    "ShopManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj",
+      "msbuildProject": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj"
+    },
+    "ShopManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
+      "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
+    },
+    "ShopManagment.InfraStracture.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagment.InfraStracture.EfCore/ShopManagment.InfraStracture.EfCore.csproj",
+      "msbuildProject": "../ShopManagment.InfraStracture.EfCore/ShopManagment.InfraStracture.EfCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "BlogManagement.Application >= 1.0.0",
       "BlogManagement.Infrastracture.EfCore >= 1.0.0",
+      "MahinaBoutique.Query >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0"
     ]
   },
@@ -6072,6 +6270,9 @@
             },
             "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\BlogManagement.Infrastracture.EfCore\\BlogManagement.Infrastracture.EfCore.csproj": {
               "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\BlogManagement.Infrastracture.EfCore\\BlogManagement.Infrastracture.EfCore.csproj"
+            },
+            "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj": {
+              "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj"
             }
           }
         }

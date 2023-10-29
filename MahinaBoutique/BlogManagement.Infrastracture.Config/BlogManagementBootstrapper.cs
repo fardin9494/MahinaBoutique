@@ -5,9 +5,10 @@ using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
 using BlogManagement.Infrastracture.EfCore;
 using BlogManagement.Infrastracture.EfCore.Repositories;
+using MahinaBoutique.Query.Contract.Article;
+using MahinaBoutique.Query.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace BlogManagement.Infrastracture.Config
 {
@@ -19,6 +20,8 @@ namespace BlogManagement.Infrastracture.Config
             service.AddTransient<IArticleCategoryRepository ,ArticleCategoryRepository>();
             service.AddTransient<IArticleApplication ,ArticleApplication>();
             service.AddTransient<IArticleRepository ,ArticleRepository>();
+            service.AddTransient<IArticleQuery ,ArticleQuery>();
+
             
 
             service.AddDbContext<BlogContext>(x => x.UseSqlServer(ConnectionString));

@@ -2144,6 +2144,7 @@
         "dependencies": {
           "BlogManagement.Application": "1.0.0",
           "BlogManagement.Infrastracture.EfCore": "1.0.0",
+          "MahinaBoutique.Query": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "compile": {
@@ -2318,6 +2319,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "BlogManagement.Infrastracture.EfCore": "1.0.0",
           "DiscountManagement.Infrastracture.EFCore": "1.0.0",
           "InventoryManagement.Infrastracture.EfCore": "1.0.0",
           "ShopManagment.InfraStracture.EfCore": "1.0.0"

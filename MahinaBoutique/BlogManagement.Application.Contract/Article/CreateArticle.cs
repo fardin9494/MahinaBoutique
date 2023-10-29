@@ -24,6 +24,7 @@ namespace BlogManagement.Application.Contract.Article
         public string PictureTitle { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.Required)]
+        [MaxLength(199,ErrorMessage = ValidationMessages.MaxCharacterString)]
         public string MetaDescription { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.Required)]

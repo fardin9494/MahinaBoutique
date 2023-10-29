@@ -31,3 +31,9 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Infrastracture.EFCore.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\BlogManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\BlogManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\BlogManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\BlogManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\MahinaBoutique.Query\bin\Debug\net5.0\BlogManagement.Domain.pdb

@@ -116,5 +116,6 @@ namespace _0_SelfBuildFramwork.Application
         {
             return $"{date.Month}{date.Day}{date.Hour}{date.Minute}{date.Second}";
         }
+
     }
 }
