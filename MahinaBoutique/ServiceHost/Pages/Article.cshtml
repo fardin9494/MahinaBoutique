@@ -1,6 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ArticleModel
 @{
+    ViewData["title"] = Model.article.Title;
+    ViewData["Keywords"] = Model.article.Keywords;
+    ViewData["MetaDescription"] = Model.article.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -45,7 +48,7 @@
                                         <!--=======  post title  =======-->
 
 
-                                        <h3 class="post-title">@Model.article.Title</h3>
+                                        <h2 class="post-title">@Model.article.Title</h2>
 
                                         <!--=======  End of post title  =======-->
                                         <!--=======  Post meta  =======-->
@@ -331,7 +334,7 @@
                                     
                                     <!--=======  single sidebar widget  =======-->
                                     <div class="single-sidebar-widget">
-                                        <h4 class="single-sidebar-widget__title">تگ ها</h4>
+                                        <h3 class="single-sidebar-widget__title">تگ ها</h3>
                                         <ul class="single-sidebar-widget__tag-list">
                                             @foreach (var tag in Model.article.ArticleTags)
                                             {

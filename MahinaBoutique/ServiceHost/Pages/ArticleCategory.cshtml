@@ -1,7 +1,9 @@
-﻿@page
+﻿@page "{id}"
 @model ServiceHost.Pages.ArticleCategoryModel
 @{
-    ViewData["title"] = "مقالات";
+    ViewData["title"] = Model.SelectedCategory.Name;
+    ViewData["Keywords"] = Model.SelectedCategory.Keywords;
+    ViewData["MetaDescription"] = Model.SelectedCategory.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -51,17 +53,17 @@
 
                                                     </div>
                                                     <div class="single-blog-post__content">
-                                                        <h3 class="title">
+                                                        <h2 class="title">
                                                             <a asp-page="/Article" asp-route-id="@article.Slug">
                                                                @article.Title
                                                             </a>
-                                                        </h3>
+                                                        </h2>
                                                         <p class="post-meta">
                                                             <span class="date">@article.PublishDate</span>
                                                         </p>
-                                                        <p class="short-desc">
+                                                        <h4 class="short-desc">
                                                             @article.ShortDescription
-                                                        </p>
+                                                        </h4>
                                                         <a asp-page="/Article" asp-route-id="@article.Slug"
                                                            class="blog-post-link">ادامه مطلب</a>
                                                     </div>

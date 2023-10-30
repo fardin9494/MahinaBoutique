@@ -1,7 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ProductModel
 @{
-    ViewData["title"] = "صفحه محصول";
+    ViewData["title"] = Model.Product.Name;
+    ViewData["Keywords"] = Model.Product.Keywords;
+    ViewData["MetaDescription"] = Model.Product.MetaDescription;
 }
 
 <!--====================  breadcrumb area ====================-->
@@ -126,7 +128,7 @@
                                         <p class="single-info">
                                             گروه :  <a asp-page="/ProductCategory" asp-route-id="@Model.Product.CategorySlug">@Model.Product.Category</a>
                                         </p>
-                                        <h4 class="product-title">@Model.Product.Name</h4>
+                                        <h2 class="product-title">@Model.Product.Name</h2>
                                         <div class="product-rating">
                                             <span class="rating">
                                                 <i class="ion-android-star active"></i>
@@ -164,9 +166,9 @@
                                                 }
                                         </p>
 
-                                        <p class="product-description">
+                                        <h3 class="product-description">
                                             @Model.Product.ShortDescription
-                                        </p>
+                                        </h3>
 
                                         <div class="product-countdown" data-countdown="@Model.Product.ExpireDiscountTime"></div>
 
@@ -186,7 +188,7 @@
                                         </div>
 
                                         <div class="social-share-buttons mt-20">
-                                            <h5>اشتراک گذاری این محصول</h5>
+                                            <h4>اشتراک گذاری این محصول</h4>
                                             <ul>
                                                 <li>
                                                     <a class="twitter" href="#">
