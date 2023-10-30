@@ -40,5 +40,7 @@ namespace MahinaBoutique.Query.Contract.Article
 
         public string CategorySlug { get; set; }
 
+        public List<string> ArticleTags { get; set; }
+
     }
 }

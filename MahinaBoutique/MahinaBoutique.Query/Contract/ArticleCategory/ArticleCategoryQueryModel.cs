@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahinaBoutique.Query.Contract.Article;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,5 +32,9 @@ namespace MahinaBoutique.Query.Contract.ArticleCategory
         public string MetaDescription { get; set; }
 
         public string CanonicalAddress { get; set; }
+
+        public List<string> TagList { get; set; }
+
+        public List<ArticleQueryModel> Articles { get; set; }
     }
 }

@@ -9,5 +9,7 @@ namespace MahinaBoutique.Query.Contract.ArticleCategory
     public interface IArticleCategoryQuery
     {
         List<ArticleCategoryQueryModel> GetArticleCategories();
+
+        ArticleCategoryQueryModel SelectArticleCategory(string slug);
     }
 }

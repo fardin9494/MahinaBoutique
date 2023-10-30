@@ -21,7 +21,7 @@ namespace MahinaBoutique.Query.Query
 
         public ArticleQueryModel GetArticle(string Slug)
         {
-            return _blogcontext.Articles.Include(x => x.Category).Select(x => new ArticleQueryModel{
+            var article = _blogcontext.Articles.Include(x => x.Category).Select(x => new ArticleQueryModel{
                 Slug = x.Slug,
                 ShortDescription = x.ShortDescription,
                 CategorySlug = x.Category.Slug,
@@ -36,8 +36,14 @@ namespace MahinaBoutique.Query.Query
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 PublishDate = x.PublishDate.ToFarsi(),
-                
                 }).FirstOrDefault(x => x.Slug == Slug);
+
+            if (!string.IsNullOrWhiteSpace(article.Keywords))
+            {
+                article.ArticleTags = article.Keywords.Split(",").ToList();
+            }
+                
+            return article;
         }
 
         public List<ArticleQueryModel> LatestArticles()

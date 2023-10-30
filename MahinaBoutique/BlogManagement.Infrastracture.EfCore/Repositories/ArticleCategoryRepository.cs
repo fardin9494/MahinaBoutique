@@ -44,6 +44,7 @@ namespace BlogManagement.Infrastracture.EfCore.Repositories
                 Id = x.Id,
                 Image = x.Image,
                 Name = x.Name,
+                ArticleCount = x.Articles.Count(),
                 });
 
             if(search.Name != null)

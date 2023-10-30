@@ -79,7 +79,13 @@
 
                                         <div class="tag-area">
                                             <span>کلمات کلیدی :</span>
-                                            <span class="text-danger">@Model.article.Keywords</span>
+                                            <ul>
+                                                @foreach (var tag in Model.article.ArticleTags)
+                                                {
+                                                    <li><a asp-page="/SearchProduct" asp-route-value="@tag">@tag</a>,</li>
+                                                }
+
+                                            </ul>
                                         </div>
 
                                         <!--=======  End of Tags area  =======-->
@@ -325,32 +331,15 @@
                                     
                                     <!--=======  single sidebar widget  =======-->
                                     <div class="single-sidebar-widget">
-                                        <h4 class="single-sidebar-widget__title">Popular Tags</h4>
+                                        <h4 class="single-sidebar-widget__title">تگ ها</h4>
                                         <ul class="single-sidebar-widget__tag-list">
-                                            <li>
-                                                <a href="#">Car Seats</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Chair</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Engine Parts</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Sofas</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Sofas</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Decor</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Furniture</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Chair</a>
-                                            </li>
+                                            @foreach (var tag in Model.article.ArticleTags)
+                                            {
+                                                <li>
+                                                    <a asp-page="/SearchProduct" asp-route-value="@tag">@tag</a>
+                                                </li>
+
+                                            }
 
                                         </ul>
                                     </div>
