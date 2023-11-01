@@ -1,8 +1,5 @@
-﻿using System;
+﻿using MahinaBoutique.Query.Contract.Comment;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MahinaBoutique.Query.Contract.Product
 {
@@ -47,5 +44,8 @@ namespace MahinaBoutique.Query.Contract.Product
         public bool IsInStock { get; set; }
 
         public List<ProductPictureQueryModel> ProductPictures { get; set; }
+
+        public List<CommentQueryModel> Comments { get; set; }
+
     }
 }

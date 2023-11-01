@@ -1,6 +1,8 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using CommentManagement.Infrastracture.EfCore;
 using DiscountManagement.Infrastracture.EFCore;
 using InventoryManagement.Infrastracture.EfCore;
+using MahinaBoutique.Query.Contract.Comment;
 using MahinaBoutique.Query.Contract.Product;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Domain.ProductPictureAgg;
@@ -18,12 +20,14 @@ namespace MahinaBoutique.Query.Query
         private readonly ShopContext _context;
         private readonly InventoryContext _inventory;
         private readonly DiscountContext _discount;
+        private readonly CommentContext _comment;
 
-        public ProductQuery(ShopContext context, InventoryContext inventory, DiscountContext discount)
+        public ProductQuery(ShopContext context, InventoryContext inventory, DiscountContext discount, CommentContext comment)
         {
             _context = context;
             _inventory = inventory;
             _discount = discount;
+            _comment = comment;
         }
 
         public List<ProductQueryModel> GetArrivals()
@@ -107,6 +111,16 @@ namespace MahinaBoutique.Query.Query
 
                 }
 
+                var comments = _comment.Comments.Where(x => x.IsConfirmed && !x.IsCanceled)
+                .Where(x => x.Type == CommentTypesMapping.Product)
+                .Where(x => x.OwnerRecordId == Product.Id).Select(x => new CommentQueryModel{
+                    Id = x.Id,
+                    Massege = x.Message,
+                    Name = x.Name
+                    }).ToList();
+
+                Product.Comments = comments;
+           
             return Product;
         }
 
@@ -161,8 +175,11 @@ namespace MahinaBoutique.Query.Query
                     }
 
                 }
+                 
                     
             }
+
+           
 
             return products;
         }

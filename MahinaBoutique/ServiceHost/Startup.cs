@@ -1,5 +1,6 @@
 using _0_SelfBuildFramwork.Application;
 using BlogManagement.Infrastracture.Config;
+using CommentManagement.Infrastracture.Config;
 using DiscountManagement.Infrastracture.Config;
 using InventoryManagement.Infrastracture.Config;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +36,7 @@ namespace ServiceHost
             DiscountManagementBootStrapper.Configure(services,ConnectionString);
             InventoryManagementBootstrapper.Configure(services,ConnectionString);
             BlogManagementBootstrapper.Configure(services,ConnectionString);
+            CommentManagementBootstrapper.Configure(services,ConnectionString);
             
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin ,UnicodeRanges.Arabic));
             services.AddTransient<IFileUploader,FileUploader>();

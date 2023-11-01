@@ -1,4 +1,3 @@
-C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.csproj.AssemblyReference.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.AssemblyInfoInputs.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.AssemblyInfo.cs

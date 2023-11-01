@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogManagement.Infrastracture.Config\BlogManagement.Infrastracture.Config.csproj" />
+    <ProjectReference Include="..\CommentManagement.Infrastracture.Config\CommentManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\DiscountManagemenet.Infrastracture.Config\DiscountManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\InventoryManagement.Infrastracture.Config\InventoryManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\MahinaBoutique.Query\MahinaBoutique.Query.csproj" />

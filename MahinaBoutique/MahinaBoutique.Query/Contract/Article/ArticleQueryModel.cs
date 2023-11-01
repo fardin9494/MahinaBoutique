@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahinaBoutique.Query.Contract.Comment;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace MahinaBoutique.Query.Contract.Article
 {
     public class ArticleQueryModel
     {
+        public long Id { get; set; }
+
         public string Title { get; set; }
 
         public string ShortDescription { get; set; }
@@ -41,6 +44,8 @@ namespace MahinaBoutique.Query.Contract.Article
         public string CategorySlug { get; set; }
 
         public List<string> ArticleTags { get; set; }
+
+        public List<CommentQueryModel> Comments { get; set; }
 
     }
 }

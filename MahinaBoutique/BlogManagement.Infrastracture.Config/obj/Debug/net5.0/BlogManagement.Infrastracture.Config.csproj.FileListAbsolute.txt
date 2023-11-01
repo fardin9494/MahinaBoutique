@@ -41,3 +41,9 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Confi
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\ShopManagment.InfraStracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\BlogManagement.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.pdb

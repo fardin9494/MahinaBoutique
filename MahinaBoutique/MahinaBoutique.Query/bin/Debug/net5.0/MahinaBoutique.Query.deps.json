@@ -9,6 +9,7 @@
       "MahinaBoutique.Query/1.0.0": {
         "dependencies": {
           "BlogManagement.Infrastracture.EfCore": "1.0.0",
+          "CommentManagement.Infrastracture.EfCore": "1.0.0",
           "DiscountManagement.Infrastracture.EFCore": "1.0.0",
           "InventoryManagement.Infrastracture.EfCore": "1.0.0",
           "ShopManagment.InfraStracture.EfCore": "1.0.0"
@@ -1149,6 +1150,35 @@
           "BlogManagement.Infrastracture.EfCore.dll": {}
         }
       },
+      "CommentManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Application.Contract.dll": {}
+        }
+      },
+      "CommentManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "CommentManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Domain.dll": {}
+        }
+      },
+      "CommentManagement.Infrastracture.EfCore/1.0.0": {
+        "dependencies": {
+          "BlogManagement.Infrastracture.EfCore": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagment.InfraStracture.EfCore": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Infrastracture.EfCore.dll": {}
+        }
+      },
       "DiscountManagement.Application.Contract/1.0.0": {
         "dependencies": {
           "0_SelfBuildFramwork": "1.0.0",
@@ -1973,6 +2003,21 @@
       "sha512": ""
     },
     "BlogManagement.Infrastracture.EfCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Infrastracture.EfCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

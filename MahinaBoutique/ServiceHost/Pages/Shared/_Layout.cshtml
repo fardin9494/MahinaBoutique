@@ -29,14 +29,14 @@
 
     @await Component.InvokeAsync("Menu")
     <!--====================  End of header area  ====================-->
-        
+
     @RenderBody()
 
     <!--====================  footer area ====================-->
     @await Component.InvokeAsync("Footer")
     <!--====================  End of footer area  ====================-->
 
-   
+
 
     <div class="search-overlay" id="search-overlay">
         <a href="javascript:void(0)" class="close-search-overlay" id="close-search-overlay">
@@ -68,6 +68,11 @@
 
     <!-- Active JS -->
     <script src="~/UserTheme/assets/js/active.js"></script>
+    
+
+
+    @RenderSection("Validation", false)
+
 
 </body>
 
