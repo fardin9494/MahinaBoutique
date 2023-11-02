@@ -1,11 +1,9 @@
-﻿using _0_SelfBuildFramwork.Infrastracture;
+﻿using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Infrastracture;
 using AccountManagement.Application.Contract.Account;
 using AccountManagement.Domain.AccountAgg;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AccountManagement.Infrastracture.EfCore.Repositories
 {
@@ -39,7 +37,8 @@ namespace AccountManagement.Infrastracture.EfCore.Repositories
                 ProfilePhoto = x.ProfilePhoto,
                 UserName = x.UserName,
                 Role = "مدیر",
-                RoleId = 2
+                RoleId = 2,
+                CreationDate = x.CreationDate.ToFarsi()
                 });
 
             if (!string.IsNullOrWhiteSpace(search.FullName))
@@ -49,7 +48,12 @@ namespace AccountManagement.Infrastracture.EfCore.Repositories
 
             if (!string.IsNullOrWhiteSpace(search.UserName))
             {
-                query = query.Where(x => x.FullName.Contains(search.UserName));
+                query = query.Where(x => x.UserName.Contains(search.UserName));
+            }
+
+            if (!string.IsNullOrWhiteSpace(search.Mobile))
+            {
+                query = query.Where(x => x.Mobile.Contains(search.Mobile));
             }
 
             if (search.RoleId > 0)

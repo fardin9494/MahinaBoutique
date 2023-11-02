@@ -15,5 +15,7 @@
         public string Mobile { get; set; }
 
         public string ProfilePhoto { get; set; }
+
+        public string CreationDate { get; set; }
     }
 }

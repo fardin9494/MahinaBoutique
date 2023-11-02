@@ -69,12 +69,12 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.NullRecordMessage);
             }
 
-            if(_accountRepository.IsExist(x => x.UserName == command.UserName && x.Id == command.Id))
+            if(_accountRepository.IsExist(x => x.UserName == command.UserName && x.Id != command.Id))
             {
                 return operation.Failed(ApplicationMessages.ExistUserName);
             }
 
-            if(_accountRepository.IsExist(x => x.Mobile == command.Mobile && x.Id == command.Id))
+            if(_accountRepository.IsExist(x => x.Mobile == command.Mobile && x.Id != command.Id))
             {
                 return operation.Failed(ApplicationMessages.ExistMobile);
             }
