@@ -1,10 +1,7 @@
-﻿using _0_Framework.Application;
-using _0_SelfBuildFramwork.Application;
+﻿using _0_SelfBuildFramwork.Application;
 using BlogManagement.Application.Contract.Article;
 using BlogManagement.Application.Contract.ArticleCategory;
 using BlogManagement.Domain.ArticleAgg;
-using BlogManagement.Domain.ArticleCategoryAgg;
-using System;
 using System.Collections.Generic;
 
 namespace BlogManagement.Application
@@ -30,7 +27,7 @@ namespace BlogManagement.Application
             }
             var slug = command.Slug.Slugify();
             var categoryslug = _repository.GetSlug(command.CategoryId);
-            var imagePath = _fileUploader.Upload(command.Picture,$"{categoryslug}/{slug}",false);
+            var imagePath = _fileUploader.Upload(command.Picture,$"{categoryslug}/{slug}",BaseFolderForUpload.Article);
 
             var Article = new Article(command.Title,command.ShortDescription,command.Description,imagePath,command.PictureAlt,
                 command.PictureTitle,command.MetaDescription,command.Keywords,slug,command.PublishDate.ToGeorgianDateTime(),command.CanonicalAddress,
@@ -56,7 +53,7 @@ namespace BlogManagement.Application
             }
             var slug = command.Slug.Slugify();
             var categoryslug = _repository.GetSlug(command.CategoryId);
-            var imagePath = _fileUploader.Upload(command.Picture,$"{categoryslug}/{slug}",false);
+            var imagePath = _fileUploader.Upload(command.Picture,$"{categoryslug}/{slug}",BaseFolderForUpload.Article);
 
             Article.Edit(command.Title,command.ShortDescription,command.Description,imagePath,command.PictureAlt,
                 command.PictureTitle,command.MetaDescription,command.Keywords,slug,command.PublishDate.ToGeorgianDateTime(),command.CanonicalAddress,

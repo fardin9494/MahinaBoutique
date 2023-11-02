@@ -19,25 +19,15 @@ namespace ServiceHost
         }
 
 
-        public string Upload(IFormFile file, string folder , bool ProductOrArticle)
+        public string Upload(IFormFile file, string folder , string basefolder)
         {
             if(file == null)
             {
                 return "";
             }
-            string Basefolder;
+           
 
-            if (ProductOrArticle)
-            {
-                Basefolder = "ProductPictures";
-            }
-            else
-            {
-                Basefolder = "ArticlePictures";
-            }
-
-
-           var DirectoryPath = $"{_webHostEnvironment.WebRootPath}//{Basefolder}//{folder}";
+           var DirectoryPath = $"{_webHostEnvironment.WebRootPath}//{basefolder}//{folder}";
 
             if (!Directory.Exists(DirectoryPath))
             {

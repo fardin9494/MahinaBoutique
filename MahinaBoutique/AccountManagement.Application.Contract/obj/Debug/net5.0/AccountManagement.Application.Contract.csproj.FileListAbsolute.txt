@@ -1,0 +1,15 @@
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.deps.json
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\bin\Debug\net5.0\ref\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\bin\Debug\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.AssemblyInfo.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\ref\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.pdb

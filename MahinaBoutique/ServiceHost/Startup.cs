@@ -1,21 +1,17 @@
 using _0_SelfBuildFramwork.Application;
+using AccountManagement.Infrastracture.Config;
 using BlogManagement.Infrastracture.Config;
 using CommentManagement.Infrastracture.Config;
 using DiscountManagement.Infrastracture.Config;
 using InventoryManagement.Infrastracture.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopManagement.Infrastracture.Config;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
-using System.Threading.Tasks;
 
 namespace ServiceHost
 {
@@ -37,9 +33,11 @@ namespace ServiceHost
             InventoryManagementBootstrapper.Configure(services,ConnectionString);
             BlogManagementBootstrapper.Configure(services,ConnectionString);
             CommentManagementBootstrapper.Configure(services,ConnectionString);
-            
+            AccountManagementBootstrapper.Configure(services,ConnectionString);
+           
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin ,UnicodeRanges.Arabic));
             services.AddTransient<IFileUploader,FileUploader>();
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddRazorPages();
         }
 

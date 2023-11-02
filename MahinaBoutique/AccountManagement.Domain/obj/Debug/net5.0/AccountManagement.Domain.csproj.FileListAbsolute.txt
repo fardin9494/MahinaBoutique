@@ -1,0 +1,17 @@
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Domain.deps.json
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\ref\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.csproj.AssemblyReference.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.AssemblyInfoInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.AssemblyInfo.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.csproj.CoreCompileInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.csproj.CopyComplete
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\ref\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.pdb

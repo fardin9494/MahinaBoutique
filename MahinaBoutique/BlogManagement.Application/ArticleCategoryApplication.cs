@@ -1,8 +1,6 @@
-﻿using _0_Framework.Application;
-using _0_SelfBuildFramwork.Application;
+﻿using _0_SelfBuildFramwork.Application;
 using BlogManagement.Application.Contract.ArticleCategory;
 using BlogManagement.Domain.ArticleCategoryAgg;
-using System;
 using System.Collections.Generic;
 
 namespace BlogManagement.Application
@@ -26,7 +24,7 @@ namespace BlogManagement.Application
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
             var slug = command.Slug.Slugify();
-            var ImagePath = _fileUploader.Upload(command.Image,slug,false);
+            var ImagePath = _fileUploader.Upload(command.Image,slug,BaseFolderForUpload.Article);
             
             var ArticleCategory = new ArticleCategory(command.Name,command.ShowOrder,command.Description,ImagePath,
             command.ImageTitle,command.ImageAlt,command.Keywords,command.MetaDescription,command.CanonicalAddress,slug);
@@ -49,7 +47,7 @@ namespace BlogManagement.Application
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
             var slug = command.Slug.Slugify();
-            var ImagePath = _fileUploader.Upload(command.Image,slug,false);
+            var ImagePath = _fileUploader.Upload(command.Image,slug,BaseFolderForUpload.Article);
             selectedArticleCAtegory.Edit(command.Name,command.ShowOrder,command.Description,ImagePath,
             command.ImageTitle,command.ImageAlt,command.Keywords,command.MetaDescription,command.CanonicalAddress,slug);
             _articleCategoryRepository.SaveChanges();

@@ -1,8 +1,6 @@
-﻿using _0_Framework.Application;
-using _0_SelfBuildFramwork.Application;
+﻿using _0_SelfBuildFramwork.Application;
 using ShopManagement.Application.Contract.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
-using System;
 using System.Collections.Generic;
 
 namespace ShopManagement.Application
@@ -29,7 +27,7 @@ namespace ShopManagement.Application
             
             var Slug = command.Slug.Slugify();
             var folder = $"{command.Slug}";
-            var fileName = _fileUploader.Upload(command.Image,folder,true);
+            var fileName = _fileUploader.Upload(command.Image,folder,BaseFolderForUpload.Product);
 
             var category = new ProductCategory(command.Name,command.Description,
                 fileName,command.ImageAlt,command.ImageTitle,command.Keyword
@@ -56,7 +54,7 @@ namespace ShopManagement.Application
 
             var slug = command.Slug.Slugify();
             var folder = $"{command.Slug}";
-            var fileName = _fileUploader.Upload(command.Image,folder,true);
+            var fileName = _fileUploader.Upload(command.Image,folder,BaseFolderForUpload.Product);
 
             product.Edit(command.Name,command.Description,fileName,
                 command.ImageAlt,command.ImageTitle,command.Keyword,

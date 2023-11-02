@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountManagement.Infrastracture.Config\AccountManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\BlogManagement.Infrastracture.Config\BlogManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\CommentManagement.Infrastracture.Config\CommentManagement.Infrastracture.Config.csproj" />
     <ProjectReference Include="..\DiscountManagemenet.Infrastracture.Config\DiscountManagement.Infrastracture.Config.csproj" />

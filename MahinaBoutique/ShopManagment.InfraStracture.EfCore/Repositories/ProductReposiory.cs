@@ -51,7 +51,7 @@ namespace ShopManagment.InfraStracture.EfCore.Repositories
 
         public string GetProductCategorySlug(long Categoryid)
         {
-            return _shopContext.Products.Include(x  => x.Category).Select(x => new {x.CategoryId,x.Slug}).FirstOrDefault(x => x.CategoryId == Categoryid).Slug;
+            return _shopContext.Products.Include(x  => x.Category).Select(x => new { x.CategoryId, x.Category.Slug}).FirstOrDefault(x => x.CategoryId == Categoryid).Slug;
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)

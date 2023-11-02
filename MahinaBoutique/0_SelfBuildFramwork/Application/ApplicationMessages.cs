@@ -12,6 +12,11 @@ namespace _0_SelfBuildFramwork.Application
 
         public const string NullRecordMessage = "رکورد مورد نظر یافت نشد";
 
+        public const string ExistUserName = "این یوزر نیم در سیستم وجود دارد";
+        
+        public const string ExistMobile = "این شماره تلفن قبلا ثبت نام کرده است";
+        
+        public const string NotMatchPassword = "پسوورد وارد شده مطابقت ندارد";
        
     }
 }

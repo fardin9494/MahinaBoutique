@@ -62,8 +62,13 @@ namespace MahinaBoutique.Query.Query
             {
                 foreach(var product in category.Products)
                 {
-                   var Price = inventory.FirstOrDefault(x => x.ProductId == product.Id).UnitPrice;
-                    product.Price = Price.ToMoney();
+                   var Price = double.NaN;
+                   if(inventory.FirstOrDefault(x => x.ProductId == product.Id) != null)
+                    {
+                      Price = inventory.FirstOrDefault(x => x.ProductId == product.Id).UnitPrice;
+                      product.Price = Price.ToMoney();
+                    }
+                   
                    
                     if(discount.FirstOrDefault(x => x.ProductId == product.Id) != null)
                        {
