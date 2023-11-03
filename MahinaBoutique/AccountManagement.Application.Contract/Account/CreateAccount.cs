@@ -10,7 +10,7 @@ namespace AccountManagement.Application.Contract.Account
 
         public string UserName { get; set; }
 
-        public int RoleId { get; set; }
+        public long RoleId { get; set; }
 
         public string Mobile { get; set; }
 

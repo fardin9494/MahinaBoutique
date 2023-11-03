@@ -36,8 +36,8 @@ namespace AccountManagement.Infrastracture.EfCore.Repositories
                 Mobile = x.Mobile,
                 ProfilePhoto = x.ProfilePhoto,
                 UserName = x.UserName,
-                Role = "مدیر",
-                RoleId = 2,
+                Role = x.Role.Name,
+                RoleId = x.RoleId,
                 CreationDate = x.CreationDate.ToFarsi()
                 });
 

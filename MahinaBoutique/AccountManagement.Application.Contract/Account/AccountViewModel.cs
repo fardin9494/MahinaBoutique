@@ -8,7 +8,7 @@
 
         public string UserName { get; set; }
 
-        public int RoleId { get; set; }
+        public long RoleId { get; set; }
 
         public string Role { get; set; }
 

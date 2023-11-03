@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AccountManagement.Application.Contract.Account;
+using AccountManagement.Application.Contract.Role;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -21,16 +22,17 @@ namespace ServiceHost.Areas.Administration.Pages.Account.Accounts
         public List<AccountViewModel> Accounts { get; set; }
 
         private readonly IAccountApplication _accountApplication;
+        private readonly IRoleApplication _roleApplication;
 
-        public IndexModel(IAccountApplication accountApplication)
+        public IndexModel(IAccountApplication accountApplication, IRoleApplication roleApplication)
         {
             _accountApplication = accountApplication;
-            
+            _roleApplication = roleApplication;
         }
 
         public void OnGet(AccountSearchModel searchModel)
         {
-            //Roles = new SelectList(_productCategory.GetList(),"Id","Name");
+            Roles = new SelectList(_roleApplication.GetRoles(),"Id","Name");
             Accounts= _accountApplication.Search(searchModel);
         }
 
@@ -38,7 +40,7 @@ namespace ServiceHost.Areas.Administration.Pages.Account.Accounts
         {
             var createAccount = new CreateAccount()
             {
-                //Categories = _productCategory.GetList()
+                Roles = _roleApplication.GetRoles()
             };
             return Partial("./Create",createAccount);
         }
@@ -52,7 +54,7 @@ namespace ServiceHost.Areas.Administration.Pages.Account.Accounts
         public IActionResult OnGetEdit(long id)
         {
             var SelectedItem = _accountApplication.GetDetails(id);
-            //SelectedItem.Categories = _productCategory.GetList();
+            SelectedItem.Roles = _roleApplication.GetRoles();
             return Partial("./Edit",SelectedItem);
         }
 

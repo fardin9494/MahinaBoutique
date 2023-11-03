@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Domain;
+using AccountManagement.Domain.RoleAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace AccountManagement.Domain.AccountAgg
 
         public string UserName { get; set; }
 
-        public int RoleId { get; private set; }
+        public long RoleId { get; private set; }
 
         public string Mobile { get; private set; }
 
@@ -21,7 +22,9 @@ namespace AccountManagement.Domain.AccountAgg
 
         public string ProfilePhoto { get; private set; }
 
-        public Account(string fullName, string userName, int roleId, string mobile, string password, string profilePhoto)
+        public Role Role { get; private set; }
+
+        public Account(string fullName, string userName, long roleId, string mobile, string password, string profilePhoto)
         {
             FullName = fullName;
             UserName = userName;
@@ -31,7 +34,7 @@ namespace AccountManagement.Domain.AccountAgg
             ProfilePhoto = profilePhoto;
         }
 
-        public void Edit(string fullName, string userName, int roleId, string mobile, string profilePhoto)
+        public void Edit(string fullName, string userName, long roleId, string mobile, string profilePhoto)
         {
             FullName = fullName;
             UserName = userName;
