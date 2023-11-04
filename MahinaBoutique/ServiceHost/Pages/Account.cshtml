@@ -34,9 +34,9 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
                                 <form method="post" asp-page-handler="SignIn">
-                                    @if (Model.Message != null)
+                                    @if (Model.loginMessage != null)
                                     {
-                                        <h4 class="text-danger">@Model.Message</h4>
+                                        <h4 class="text-danger">@Model.loginMessage</h4>
                                     }
                                     <div class="login-form">
                                         <h4 class="login-title">ورود</h4>
@@ -70,31 +70,38 @@
                                 </form>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
-                                <form action="#">
-
+                                <form method="post" asp-page-handler="Register">
+                                    @if (Model.registerMessage != null)
+                                    {
+                                        <h4 class="@(Model.registerMessageClass ? "text-success" : "text-danger")">@Model.registerMessage</h4>
+                                    }
                                     <div class="login-form">
                                         <h4 class="login-title">ثبت نام</h4>
 
                                         <div class="row">
                                             <div class="col-md-6 col-12 mb-20">
-                                                <label>نام و نام خانوادگی</label>
-                                                <input type="text" placeholder="نام کامل">
+                                                <label asp-for="CreateCommand.FullName">نام و نام خانوادگی</label>
+                                                <input type="text" asp-for="CreateCommand.FullName">
+                                                <span asp-validation-for="CreateCommand.FullName" class="error"></span>
                                             </div>
                                             <div class="col-md-6 col-12 mb-20">
-                                                <label>نام کاربری</label>
-                                                <input type="text" placeholder="نام کاربری">
+                                                <label asp-for="CreateCommand.UserName">نام کاربری</label>
+                                                <input type="text" asp-for="CreateCommand.UserName" placeholder="نام کاربری">
+                                                <span asp-validation-for="CreateCommand.UserName" class="error"></span>
                                             </div>
                                             <div class="col-md-12 mb-20">
-                                                <label>موبایل</label>
-                                                <input type="tel" placeholder="موبایل">
+                                                <label asp-for="CreateCommand.Mobile">موبایل</label>
+                                                <input type="tel" asp-for="CreateCommand.Mobile" placeholder="موبایل">
+                                                <span asp-validation-for="CreateCommand.Mobile" class="error"></span>
                                             </div>
                                             <div class="col-md-6 mb-20">
-                                                <label>رمز عبور</label>
-                                                <input type="password" placeholder="رمز عبور">
+                                                <label asp-for="CreateCommand.Password">رمز عبور</label>
+                                                <input type="password" asp-for="CreateCommand.Password" placeholder="رمز عبور">
+                                                <span asp-validation-for="CreateCommand.Password" class="error"></span>
                                             </div>
                                             <div class="col-md-6 mb-20">
-                                                <label>تکرار رمز عبور</label>
-                                                <input type="password" placeholder="تکرار رمز عبور">
+                                                <label asp-for="CreateCommand.RePassword">تکرار رمز عبور</label>
+                                                <input type="password" asp-for="CreateCommand.RePassword" placeholder="تکرار رمز عبور">
                                             </div>
                                             <div class="col-12">
                                                 <button class="register-button mt-0">ثبت نام</button>

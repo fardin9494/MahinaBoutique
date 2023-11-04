@@ -11,9 +11,18 @@ namespace ServiceHost.Pages
     public class AccountModel : PageModel
     {
         [TempData]
-        public string Message { get; set; }
+        public string loginMessage { get; set; }
+
+        [TempData]
+        public string registerMessage { get; set; }
+        
+        [TempData]
+        public bool registerMessageClass { get; set; }
 
         public LoginModel Command { get; set; }
+
+        public CreateAccount CreateCommand { get; set; }
+        
 
         private readonly IAccountApplication _accountApplication;
 
@@ -31,7 +40,7 @@ namespace ServiceHost.Pages
            var result = _accountApplication.Login(command);
             if (!result.IsSuccedded)
             {
-                Message = result.Message;
+                loginMessage = result.Message;
                 return RedirectToPage("/Account");
             }
             else
@@ -40,10 +49,37 @@ namespace ServiceHost.Pages
             }  
         }
 
-        public RedirectToPageResult OnGetSignOut()
+        public RedirectToPageResult OnGetLogOut()
         {
             _accountApplication.LogOut();
             return RedirectToPage("/index");
+        }
+
+        public RedirectToPageResult OnPostRegister(CreateAccount createcommand)
+        {
+            createcommand.RoleId = 2;
+
+            if(createcommand.Password != createcommand.RePassword)
+            {
+                registerMessage = "پسوورد تطابق ندارد";
+                return RedirectToPage("/Account");
+            }
+
+            var result = _accountApplication.Create(createcommand);
+
+            
+            if (result.IsSuccedded)
+            {
+                registerMessageClass = true;
+                registerMessage = result.Message;
+                return RedirectToPage("/Account");
+                
+            }
+            else
+            {
+                registerMessage = result.Message;
+                return RedirectToPage("/Account");
+            }
         }
     }
 }
