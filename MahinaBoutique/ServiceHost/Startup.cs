@@ -4,8 +4,11 @@ using BlogManagement.Infrastracture.Config;
 using CommentManagement.Infrastracture.Config;
 using DiscountManagement.Infrastracture.Config;
 using InventoryManagement.Infrastracture.Config;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,6 +30,7 @@ namespace ServiceHost
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
             var ConnectionString = Configuration.GetConnectionString("MahinaBoutique");
             ShopmanagmentBootstrapper.Configure(services,ConnectionString);
             DiscountManagementBootStrapper.Configure(services,ConnectionString);
@@ -35,8 +39,29 @@ namespace ServiceHost
             CommentManagementBootstrapper.Configure(services,ConnectionString);
             AccountManagementBootstrapper.Configure(services,ConnectionString);
            
+            
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
+            });
+            services.Configure<CookieTempDataProviderOptions>(options =>
+            {
+                options.Cookie.IsEssential = true;
+            });
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
+                {
+                    o.LoginPath = new PathString("/Account");
+                    o.LogoutPath = new PathString("/Account");
+                    o.AccessDeniedPath = new PathString("/AccessDenied");
+                });
+
+
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin ,UnicodeRanges.Arabic));
             services.AddTransient<IFileUploader,FileUploader>();
+            services.AddTransient<IAuthHelper,AuthHelper>();
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddRazorPages();
         }
@@ -55,9 +80,10 @@ namespace ServiceHost
                 app.UseHsts();
             }
 
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCookiePolicy();
             app.UseRouting();
 
             app.UseAuthorization();

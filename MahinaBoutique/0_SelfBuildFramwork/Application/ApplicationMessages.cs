@@ -17,6 +17,9 @@ namespace _0_SelfBuildFramwork.Application
         public const string ExistMobile = "این شماره تلفن قبلا ثبت نام کرده است";
         
         public const string NotMatchPassword = "پسوورد وارد شده مطابقت ندارد";
+        
+        public const string UserNotFound = "کاربر با مشخصات زیر یافت نشد";
        
+        public const string WrongPassword = "پسوورد وارد شده اشتباه است";
     }
 }

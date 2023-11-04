@@ -1,5 +1,6 @@
 ﻿@model MahinaBoutique.Query.Contract.MenuQueryModel
 
+@inject _0_SelfBuildFramwork.Application.IAuthHelper authhelper
 <div class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -34,23 +35,44 @@
 
 
                                 <li class="menu-item-has-children">
-                                    <a >دسته مقالات</a>
+                                    <a>دسته مقالات</a>
                                     <ul class="sub-menu">
-                                        
-                                        @foreach(var ArticleCategory in Model.ArticleCategories)
-                                            {
-                                                <li>
-                                                    <a asp-page="/ArticleCategory" asp-route-id="@ArticleCategory.Slug">@ArticleCategory.Name</a>
-                                                </li>
-                                            }
-                                        
+
+                                        @foreach (var ArticleCategory in Model.ArticleCategories)
+                                        {
+                                            <li>
+                                                <a asp-page="/ArticleCategory" asp-route-id="@ArticleCategory.Slug">@ArticleCategory.Name</a>
+                                            </li>
+                                        }
+
 
                                     </ul>
                                 </li>
-
                                 <li>
                                     <a href="contact.html">تماس با ما</a>
                                 </li>
+                                
+                                @if (authhelper.IsAuthenticated())
+                                {
+
+                                    <li class="menu-item-has-children">
+                                        <a class="text-info ">سلام @authhelper.AuthenticatedName().Split(" ")[0]  </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a asp-page="/Account" asp-page-handler="LogOut">خروج</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-page="/Account">ورود</a>
+                                    </li>
+                                }
+
+
+
                             </ul>
                         </nav>
                     </div>

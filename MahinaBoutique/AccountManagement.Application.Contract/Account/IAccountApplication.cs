@@ -13,6 +13,10 @@ namespace AccountManagement.Application.Contract.Account
 
         OperationResult Edit(EditAccount command);
 
+        void LogOut();
+
+        OperationResult Login(LoginModel command);
+
         OperationResult ChangePassword(ChangeAccountPassword command);
 
         EditAccount GetDetails(long id);

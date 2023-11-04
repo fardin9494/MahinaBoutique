@@ -28,6 +28,11 @@ namespace AccountManagement.Infrastracture.EfCore.Repositories
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public Account GetWithUserName(string Username)
+        {
+            return _context.Accounts.FirstOrDefault(x => x.UserName == Username);
+        }
+
         public List<AccountViewModel> Search(AccountSearchModel search)
         {
             var query = _context.Accounts.Select(x => new AccountViewModel{

@@ -268,3 +268,4 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Account\Roles\Create.cshtml.g.cs
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Account\Roles\Edit.cshtml.g.cs
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Account\Roles\Index.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs

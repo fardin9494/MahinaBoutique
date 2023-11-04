@@ -8,7 +8,6 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\bin\Debu
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
-C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.csproj.AssemblyReference.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.AssemblyInfoInputs.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.AssemblyInfo.cs
@@ -17,3 +16,4 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debu
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ref\ShopManagement.Application.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.csproj.AssemblyReference.cache

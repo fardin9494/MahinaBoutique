@@ -115,7 +115,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AM.Infrastracture", "AM.Inf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Infrastracture.EfCore", "AccountManagement.Infrastracture.EfCore\AccountManagement.Infrastracture.EfCore.csproj", "{F3DD43AC-DC9A-4FCA-BEE8-DCDACCB1E480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Infrastracture.Config", "AccountManagement.Infrastracture.Config\AccountManagement.Infrastracture.Config.csproj", "{01B49040-E21B-40E2-AA7A-17219E2513C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Infrastracture.Config", "AccountManagement.Infrastracture.Config\AccountManagement.Infrastracture.Config.csproj", "{01B49040-E21B-40E2-AA7A-17219E2513C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
