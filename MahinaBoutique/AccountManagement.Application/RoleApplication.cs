@@ -22,7 +22,7 @@ namespace AccountManagement.Application
             {
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
-            var Role = new Role(command.Name);
+            var Role = new Role(command.Name,new List<RolePermission>());
             _roleRepository.Create(Role);
             _roleRepository.SaveChanges();
             return operation.Succedded();
@@ -40,7 +40,7 @@ namespace AccountManagement.Application
             {
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
-            SelectedRole.Edit(command.Name);
+            SelectedRole.Edit(command.Name,new List<RolePermission>());
              _roleRepository.SaveChanges();
             return operation.Succedded();
         }
