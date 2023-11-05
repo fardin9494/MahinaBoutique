@@ -15,5 +15,9 @@ namespace _0_SelfBuildFramwork.Application
         void SignIn(AuthViewModel account);
 
         void SignOut();
+
+        string AuthenticatedRole();
+
+        long AuthenticatedAccountId();
     }
 }

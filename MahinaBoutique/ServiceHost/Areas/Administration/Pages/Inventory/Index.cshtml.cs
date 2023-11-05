@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using _0_SelfBuildFramwork.Infrastracture;
 using InventoryManagement.Application.Contract.Inventory;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -7,6 +9,7 @@ using ShopManagement.Application.Contract.Product;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
+    [Authorize(Roles = Roles.SystemManager)]
     public class IndexModel : PageModel
     {
 

@@ -17,6 +17,16 @@ namespace _0_SelfBuildFramwork.Application
             _contextAccessor = contextAccessor;
         }
 
+        public long AuthenticatedAccountId()
+        {
+            if (!IsAuthenticated())
+            {
+                return 0;
+            }
+          var AccountId = long.Parse( _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "AccountId").Value);
+            return AccountId;
+        }
+
         public string AuthenticatedName()
         {
             if (!IsAuthenticated())
@@ -26,6 +36,16 @@ namespace _0_SelfBuildFramwork.Application
 
             var Fullname = _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value.ToString();
             return Fullname;
+        }
+
+        public string AuthenticatedRole()
+        {
+            if (!IsAuthenticated())
+            {
+                return null;
+            }
+            var RoleId = _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value;
+            return RoleId;
         }
 
         public bool IsAuthenticated()
