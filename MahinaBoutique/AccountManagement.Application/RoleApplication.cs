@@ -1,4 +1,5 @@
 ﻿using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Infrastracture;
 using AccountManagement.Application.Contract.Role;
 using AccountManagement.Domain.RoleAgg;
 using System;
@@ -12,7 +13,7 @@ namespace AccountManagement.Application
 
         public RoleApplication(IRoleRepository roleRepository)
         {
-            this._roleRepository = roleRepository;
+            _roleRepository = roleRepository;
         }
 
         public OperationResult Create(CreateRole command)
@@ -22,7 +23,21 @@ namespace AccountManagement.Application
             {
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
-            var Role = new Role(command.Name,new List<RolePermission>());
+
+            var permisions = new List<RolePermission>();
+            
+            if(command.Permissions != null)
+            {
+                foreach(var StringPermission in command.Permissions)
+                {
+                int PermissionCode = int.Parse(StringPermission.Split(",")[1]);
+                string PermissionName = StringPermission.Split(",")[0];
+                permisions.Add(new RolePermission(PermissionCode,PermissionName));
+                }      
+            }
+
+            var Role = new Role(command.Name,permisions);
+            
             _roleRepository.Create(Role);
             _roleRepository.SaveChanges();
             return operation.Succedded();
@@ -40,8 +55,20 @@ namespace AccountManagement.Application
             {
                 return operation.Failed(ApplicationMessages.DupplicatedMessage);
             }
-            SelectedRole.Edit(command.Name,new List<RolePermission>());
-             _roleRepository.SaveChanges();
+            var permisions = new List<RolePermission>();
+            
+            if(command.Permissions != null)
+            {
+                foreach(var StringPermission in command.Permissions)
+                {
+                int PermissionCode = int.Parse(StringPermission.Split(",")[1]);
+                string PermissionName = StringPermission.Split(",")[0];
+                permisions.Add(new RolePermission(PermissionCode,PermissionName));
+                } 
+            }     
+
+            SelectedRole.Edit(command.Name,permisions);
+            _roleRepository.SaveChanges();
             return operation.Succedded();
         }
 

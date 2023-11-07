@@ -1,4 +1,5 @@
-﻿using MahinaBoutique.Query.Contract.Product;
+﻿using _0_SelfBuildFramwork.Infrastracture;
+using MahinaBoutique.Query.Contract.Product;
 using MahinaBoutique.Query.Contract.ProductCategory;
 using MahinaBoutique.Query.Contract.Slide;
 using MahinaBoutique.Query.Query;
@@ -15,6 +16,7 @@ using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.SlideAgg;
 using ShopManagement.InfraStracture.EfCore;
 using ShopManagement.InfraStracture.EfCore.Repositories;
+using ShopManagment.Infrastracture.Config.Permissions;
 using ShopManagment.InfraStracture.EfCore.Repositories;
 using System;
 
@@ -35,6 +37,7 @@ namespace ShopManagement.Infrastracture.Config
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
+            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(Connectionstring));
         }
