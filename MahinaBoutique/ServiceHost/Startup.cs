@@ -73,7 +73,9 @@ namespace ServiceHost
                 });   
                 
 
-            services.AddRazorPages().AddRazorPagesOptions(option => 
+            services.AddRazorPages()
+                .AddMvcOptions(option => option.Filters.Add<SecurityPageFilter>())
+                .AddRazorPagesOptions(option => 
             { option.Conventions.AuthorizeAreaFolder("Administration","/","AdminArea");
               option.Conventions.AuthorizeAreaFolder("Administration","/Shop","Shop");
               option.Conventions.AuthorizeAreaFolder("Administration","/Discount","Discount");

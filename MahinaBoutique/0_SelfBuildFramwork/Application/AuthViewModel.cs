@@ -1,4 +1,6 @@
-﻿namespace _0_SelfBuildFramwork.Application
+﻿using System.Collections.Generic;
+
+namespace _0_SelfBuildFramwork.Application
 {
     public class AuthViewModel
     {
@@ -10,12 +12,15 @@
 
         public long RoleId { get; set; }
 
-        public AuthViewModel(long id, string fullName, string userName, long roleId)
+        public List<int> Permissions { get; set; }
+
+        public AuthViewModel(long id, string fullName, string userName, long roleId, List<int> permissions)
         {
             Id = id;
             FullName = fullName;
             UserName = userName;
             RoleId = roleId;
+            Permissions = permissions;
         }
     }
 }

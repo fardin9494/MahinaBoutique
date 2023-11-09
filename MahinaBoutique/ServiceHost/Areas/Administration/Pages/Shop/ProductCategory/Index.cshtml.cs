@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _0_SelfBuildFramwork.Infrastracture;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contract.ProductCategory;
+using ShopManagment.Infrastracture.Config.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
 {
@@ -22,16 +24,19 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
             _productCategory = productCategory;
         }
 
+        [NeedPermission(ShopPermissions.ListProductCategory)]
         public void OnGet(ProductCategorySearchModel searchModel)
         {
             ProductCategories = _productCategory.Search(searchModel);
         }
 
+        
         public IActionResult OnGetCreate()
         {
             return Partial("./Create",new CreatePoductCategory());
         }
 
+        [NeedPermission(ShopPermissions.CreateProduct)]
         public JsonResult OnPostCreate(CreatePoductCategory command)
         {
             var result = _productCategory.Create(command);
@@ -44,6 +49,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
             return Partial("./Edit",SelectedItem);
         }
 
+        [NeedPermission(ShopPermissions.EditProduct)]
         public JsonResult OnPostEdit(EditProductCategory command)
         {
             if (!ModelState.IsValid)

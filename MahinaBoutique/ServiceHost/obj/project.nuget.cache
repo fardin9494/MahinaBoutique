@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7GuoeAHB8+OOoVCe7KquduK/MjjGzCOrLN9UHmJPldLjTFSYJAYDTUhBf+jIgZqoFyMU+SfV6vRcviK5W3QMlw==",
+  "dgSpecHash": "7nR0jxpiH6fAgZ/fryGpwY5Gw+dIhQ1ZsWh8WSGMmrU4v28kiZyOFFOKE3fhmV2rl0c/gcUKEs9exY726/f5ng==",
   "success": true,
   "projectFilePath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
@@ -73,7 +73,7 @@
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Fardin\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Fardin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

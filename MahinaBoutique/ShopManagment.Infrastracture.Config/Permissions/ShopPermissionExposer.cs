@@ -14,19 +14,19 @@ namespace ShopManagment.Infrastracture.Config.Permissions
             return new Dictionary<string, List<PermissionDto>>{
                 {"Product", new List<PermissionDto>
                   {
-                        new PermissionDto(10,"ListProduct"),
-                        new PermissionDto(11,"SearcProduct"),
-                        new PermissionDto(12,"EditProduct"),
-                        new PermissionDto(13,"CreateProduct"),
+                        new PermissionDto(ShopPermissions.ListProduct,"ListProduct"),
+                        new PermissionDto(ShopPermissions.SearchProduct,"SearcProduct"),
+                        new PermissionDto(ShopPermissions.EditProduct,"EditProduct"),
+                        new PermissionDto(ShopPermissions.CreateProduct,"CreateProduct"),
                         
                   }
                 },
                 {"ProductCategory",new List<PermissionDto>
                   {
-                    new PermissionDto(20,"ListProductCategory"),
-                    new PermissionDto(21,"SearchProductCategory"),
-                    new PermissionDto(22,"EditProductCategory"),
-                    new PermissionDto(23,"CreateProductCategory"),
+                    new PermissionDto(ShopPermissions.ListProductCategory,"ListProductCategory"),
+                    new PermissionDto(ShopPermissions.SearchProductCategory,"SearchProductCategory"),
+                    new PermissionDto(ShopPermissions.EditProductCategory,"EditProductCategory"),
+                    new PermissionDto(ShopPermissions.CreateProductCategory,"CreateProductCategory"),
                   }
                 }
             };

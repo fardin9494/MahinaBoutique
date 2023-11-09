@@ -19,5 +19,7 @@ namespace _0_SelfBuildFramwork.Application
         string AuthenticatedRole();
 
         long AuthenticatedAccountId();
+
+        List<int> AuthenticatedPermissions();
     }
 }

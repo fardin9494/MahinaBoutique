@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8VT3qhxPTc3GGku3KbQ8NSOQXEn69gHf6O29BAeW9Zdpjwy+8j0twRBzafTpb8FPfUUVYMXx9ob0vNVUIpa1Ig==",
+  "dgSpecHash": "LJR3EBAjvJo2RS3jAbEuLa63iKf6aZ5ywS6WB8OhkueuWRFyl3mrulyhCkpYssuLlvVtgb/uSZAc649lZNHMXA==",
   "success": true,
   "projectFilePath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fardin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
