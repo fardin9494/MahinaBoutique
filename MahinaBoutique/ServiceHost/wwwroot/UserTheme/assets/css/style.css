@@ -775,7 +775,7 @@ select {
 .header-cart-icon .mini-cart {
 	position: absolute;
 	top: 100%;
-	right: 0;
+	left: 0;
 	margin-top: 34px;
 }
 

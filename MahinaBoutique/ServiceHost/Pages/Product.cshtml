@@ -176,11 +176,11 @@
                                         <div class="product-actions">
                                             <div class="quantity-selection">
                                                 <label>تعداد</label>
-                                                <input type="number" value="1" min="1">
+                                                <input type="number" value="1" min="1" id="ProductCount">
                                             </div>
 
                                             <div class="product-buttons">
-                                                <a class="cart-btn" href="#">
+                                                <a class="cart-btn" onclick="AddToCart('@Model.Product.Id','@Model.Product.Name','@Model.Product.Price','@Model.Product.Picture')">
                                                     <i class="ion-bag"></i> خرید
 
                                                 </a>
@@ -334,4 +334,6 @@
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
 
 }
+
+
 <!--====================  End of page content area  ====================-->
