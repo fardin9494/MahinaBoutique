@@ -1,7 +1,7 @@
 ﻿
 
 const CookieName = "Item-cart" ;
-function AddToCart(id, Name, Price, Picture) {
+function AddToCart(Id, Name, Price, Picture) {
     let Products = $.cookie(CookieName);
     if (Products === undefined) {
         Products = []
@@ -10,14 +10,14 @@ function AddToCart(id, Name, Price, Picture) {
     }
 
     const ProductCount = $("#ProductCount").val();
-    var CurrentProduct = Products.find(x => x.id === id)
+    var CurrentProduct = Products.find(x => x.Id === Id)
     if (CurrentProduct !== undefined) {
-        Products.find(x => x.id == id).ProductCount = parseInt(CurrentProduct.ProductCount) + parseInt(ProductCount)
+        Products.find(x => x.Id == Id).ProductCount = parseInt(CurrentProduct.ProductCount) + parseInt(ProductCount)
     } else {
         const Product = {
-            id,
+            Id,
             Name,
-            Price,
+            UnitPrice : Price,
             Picture,
             ProductCount,
         }
@@ -28,6 +28,7 @@ function AddToCart(id, Name, Price, Picture) {
 }
 
 function UpdateCart() {
+    debugger
     let Products = $.cookie(CookieName);
     Products = JSON.parse(Products);
     $("#cart_item_count").text(Products.length)
@@ -37,7 +38,7 @@ function UpdateCart() {
 
     Products.forEach(x => {
         const Product = ` <div class="single-cart-item">
-                                                <a href="javascript:void(0)" class="remove-icon" onclick="RemoveCartItem('${x.id}')">
+                                                <a href="javascript:void(0)" class="remove-icon" onclick="RemoveCartItem('${x.Id}')">
                                                     <i class="ion-android-close"></i>
                                                 </a>
                                                 <div class="image">
@@ -52,7 +53,7 @@ function UpdateCart() {
                                                     </p>
                                                     <p class="count"><span>تعداد : ${x.ProductCount}</span></p>
                                                     <p class="product-title">
-                                                        قیمت واحد : ${x.Price}
+                                                        قیمت واحد : ${x.UnitPrice}
                                                     </p>
                                                 </div>
                                             </div>`
