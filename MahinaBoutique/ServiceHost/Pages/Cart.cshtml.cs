@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using MahinaBoutique.Query.Contract.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -15,18 +16,25 @@ namespace ServiceHost.Pages
     {
         public List<CartItem> CartItems { get; set; }
         public const string CookieName = "Item-cart";
+        private readonly IProductQuery _productQuery;
+
+        public CartModel(IProductQuery productQuery)
+        {
+            _productQuery = productQuery;
+        }
 
         public void OnGet()
         {
             var Serialaizer = new JavaScriptSerializer();
             var Value = Request.Cookies[CookieName];
-            CartItems = Serialaizer.Deserialize<List<CartItem>>(Value);
-            foreach(var Cart in CartItems)
+            var Carts = Serialaizer.Deserialize<List<CartItem>>(Value);
+            foreach(var Cart in Carts)
             {
                 var NumberPrice = double.Parse(Cart.UnitPrice, CultureInfo.CreateSpecificCulture("fa-ir"));
                 Cart.ItemPrice = NumberPrice * Cart.ProductCount;
-              
             }
+
+            CartItems = _productQuery.CheckInventoryStatus(Carts);
         }
 
         public RedirectToPageResult OnGetRemoveCart(long id)

@@ -5,13 +5,12 @@ using InventoryManagement.Infrastracture.EfCore;
 using MahinaBoutique.Query.Contract.Comment;
 using MahinaBoutique.Query.Contract.Product;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Application.Contract.Order;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.InfraStracture.EfCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MahinaBoutique.Query.Query
 {
@@ -173,15 +172,29 @@ namespace MahinaBoutique.Query.Query
                         var DiscountAmount = Math.Round((price*discount)/100);
                         product.PriceAfterDiscount = (price - DiscountAmount).ToMoney();
                     }
+                }    
+            }
+            return products;
+        }
 
+        public List<CartItem> CheckInventoryStatus(List<CartItem> cartItems)
+        {
+            var inventory = _inventory.Inventory.ToList();
+
+            foreach(var cart in cartItems)
+            {
+               var inStock = inventory.FirstOrDefault(x => x.ProductId == cart.Id && x.InStock);
+               if(inStock != null)
+                {
+                    cart.IsInStock = inStock.CalculateCurrentCount() >= cart.ProductCount;
                 }
-                 
-                    
+                else
+                {
+                    cart.IsInStock = false;
+                }
             }
 
-           
-
-            return products;
+            return cartItems;
         }
     }
 }

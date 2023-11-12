@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using ShopManagement.Application.Contract.Order;
+using System.Collections.Generic;
 
 namespace MahinaBoutique.Query.Contract.Product
 {
@@ -11,5 +12,7 @@ namespace MahinaBoutique.Query.Contract.Product
         List<ProductQueryModel> Search(string value);
 
         ProductQueryModel GetDeatail(string slug);
+
+        List<CartItem> CheckInventoryStatus(List<CartItem> cartItems);
     }
 }

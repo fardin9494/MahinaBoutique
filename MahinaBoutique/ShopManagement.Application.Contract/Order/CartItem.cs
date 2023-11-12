@@ -21,5 +21,7 @@ namespace ShopManagement.Application.Contract.Order
 
         public double ItemPrice { get; set; }
 
+        public bool IsInStock {get; set;}
+
     }
 }
