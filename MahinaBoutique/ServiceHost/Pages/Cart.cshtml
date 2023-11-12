@@ -42,7 +42,7 @@
                             }
                         }
                     <div class="page-content-wrapper">
-                        <form action="#">
+                        
                             <div class="cart-table table-responsive">
                                 <table class="table">
                                     <thead>
@@ -72,11 +72,11 @@
                                                 </td>
                                                 <td class="pro-quantity">
                                                     <div class="quantity-selection">
-                                                        <input type="number" value="@cart.ProductCount" min="1">
+                                                        <input type="number" value="@cart.ProductCount" min="1" onchange="ChangeProductCount('@cart.Id','#Total-price-@cart.Id', this.value)">
                                                     </div>
                                                 </td>
                                                 <td class="pro-subtotal">
-                                                    <span>@cart.ItemPrice.ToMoney()</span>
+                                                    <span id="Total-price-@cart.Id">@cart.ItemPrice.ToMoney()</span>
                                                 </td>
                                                 <td class="pro-remove">
                                                     <a asp-page-handler="RemoveCart" asp-route-id="@cart.Id">
@@ -89,13 +89,13 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </form>
+                      
 
                         <div class="row">
-                            <div class="col-lg-12 col-12 d-flex ">
-                                <div class="cart-summary text-center">
+                            <div class="col-lg-12 col-12 text-center ">
+                                <div class="cart-summary">
                                     <div class="cart-summary-button ">
-                                        <button class="checkout-btn">تکمیل فرآیند خرید</button>
+                                        <a asp-page-handler="GoToCheckOut" class="btn btn-outline-dark ">تکمیل فرآیند خرید</a>
                                     </div>
                                 </div>
                             </div>

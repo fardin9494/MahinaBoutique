@@ -21,7 +21,13 @@ namespace ShopManagement.Application.Contract.Order
 
         public double ItemPrice { get; set; }
 
-        public bool IsInStock {get; set;}
+        public bool IsInStock { get; set; }
+
+        public int DiscountRate { get; set; }
+
+        public double DiscountAmount { get; set; }
+
+        public double PayAmount { get; set; }
 
     }
 }

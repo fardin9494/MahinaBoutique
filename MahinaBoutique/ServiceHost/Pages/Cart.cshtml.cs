@@ -51,5 +51,22 @@ namespace ServiceHost.Pages
             return RedirectToPage("/Cart");
 
         }
+
+        public RedirectToPageResult OnGetGoToCheckOut()
+        {
+            var Serialaizer = new JavaScriptSerializer();
+            var Value = Request.Cookies[CookieName];
+            var Carts = Serialaizer.Deserialize<List<CartItem>>(Value);
+            Carts = _productQuery.CheckInventoryStatus(Carts);
+            
+            if(Carts.Any(x => !x.IsInStock))
+            {
+              return  RedirectToPage("./Cart");
+            }
+            else
+            {
+              return  RedirectToPage("/CheckOut");
+            }
+        }
     }
 }

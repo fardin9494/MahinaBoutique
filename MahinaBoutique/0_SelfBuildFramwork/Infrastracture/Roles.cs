@@ -11,5 +11,7 @@ namespace _0_SelfBuildFramwork.Infrastracture
         public const string SystemManager = "1";
         public const string NormalUser = "2";
         public const string SystemAdmin = "3";
+        public const string ColleagueUser = "4";
+
     }
 }

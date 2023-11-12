@@ -1,0 +1,14 @@
+﻿using ShopManagement.Application.Contract.Order;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MahinaBoutique.Query.Contract
+{
+    public interface ICartCalculator
+    {
+       Cart CalculateCart(List<CartItem> cartItems);
+    }
+}

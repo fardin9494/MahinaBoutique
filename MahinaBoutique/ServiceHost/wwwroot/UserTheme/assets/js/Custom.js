@@ -63,12 +63,25 @@ function UpdateCart() {
 }
 
 function RemoveCartItem(id) {
-    debugger;
     let Products = $.cookie(CookieName);
     Products = JSON.parse(Products);
     const itemToRemove = Products.findIndex(x => x.id== id)
     Products.splice(itemToRemove,1)
     $.cookie(CookieName, JSON.stringify(Products),{expires:2,path:"/"})
     UpdateCart();
+}
+
+function ChangeProductCount(id, Totalprice, productCount) {
+    debugger;
+    let Products = $.cookie(CookieName);
+    Products = JSON.parse(Products);
+    var Selectedindex = Products.findIndex(x => x.Id == id);
+    var SelectedProduct = Products[Selectedindex];
+    SelectedProduct.ProductCount = parseInt(productCount);
+    var unitprice = (SelectedProduct.UnitPrice).replace(/٬/g,'')
+    $(`${Totalprice}`).text( parseInt(productCount) * parseInt(unitprice) )
+    $.cookie(CookieName, JSON.stringify(Products),{expires:2,path:"/"})
+    UpdateCart();
+
 }
 
