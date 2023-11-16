@@ -1,4 +1,5 @@
 using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Application.ZarinPal;
 using _0_SelfBuildFramwork.Infrastracture;
 using AccountManagement.Infrastracture.Config;
 using BlogManagement.Infrastracture.Config;
@@ -63,6 +64,7 @@ namespace ServiceHost
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin ,UnicodeRanges.Arabic));
             services.AddTransient<IFileUploader,FileUploader>();
             services.AddTransient<IAuthHelper,AuthHelper>();
+            services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
 
             services.AddAuthorization(option => {

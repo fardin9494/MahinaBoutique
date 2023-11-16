@@ -1,5 +1,6 @@
 ﻿using _0_SelfBuildFramwork.Application;
 using _0_SelfBuildFramwork.Infrastracture;
+using AccountManagement.Infrastracture.EfCore;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using ShopManagement.InfraStracture.EfCore;
@@ -15,11 +16,13 @@ namespace InventoryManagement.Infrastracture.EfCore.Repositories
     {
         private readonly InventoryContext _inventoryContext;
         private readonly ShopContext _shopContext;
+        private readonly AccountContext _accountContext;
 
-        public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext) : base(inventoryContext)
+        public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext, AccountContext accountContext) : base(inventoryContext)
         {
             _inventoryContext = inventoryContext;
             _shopContext = shopContext;
+            _accountContext = accountContext;
         }
 
         public EditInventory GetDetails(long id)
@@ -39,19 +42,25 @@ namespace InventoryManagement.Infrastracture.EfCore.Repositories
         public List<InventoryOperationViewModel> Operations(long InventoryId)
         {
             var inventory = _inventoryContext.Inventory.FirstOrDefault(x => x.Id == InventoryId);
+            var account = _accountContext.Accounts.Select(x => new{x.Id,x.FullName}).ToList();
 
-           return inventory.Operations.Select(x => new InventoryOperationViewModel{
+           var opertions = inventory.Operations.Select(x => new InventoryOperationViewModel{
                Count = x.Count,
                CurrentCount = x.CurrentCount,
                Description = x.Description,
                Id = x.Id,
                Operation = x.Operation,
                OperationTime = x.OperationTime.ToFarsi(),
-               Operator = "مدیر",
-               OperatorId = x.OperatorId,
+                OperatorId = x.OperatorId,
                OrderId = x.OrderId,
-               
                }).ToList();
+
+            foreach(var operation in opertions)
+            {
+                operation.Operator = account.FirstOrDefault(x => x.Id == operation.OperatorId)?.FullName;
+            }
+
+            return opertions;
         }
 
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)

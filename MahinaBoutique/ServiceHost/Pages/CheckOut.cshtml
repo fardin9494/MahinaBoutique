@@ -96,7 +96,7 @@
                                         <h2> مبلغ قابل پرداخت <span>@Model.Carts.TotalPayAmount.ToMoney() تومان</span></h2>
                                     </div>
                                     <div class="cart-summary-button">
-                                        <button class="checkout-btn">پرداخت</button>
+                                        <a class="btn btn-outline-dark" asp-page-handler="Pay">پرداخت</a>
                                     </div>
                                 </div>
                             </div>

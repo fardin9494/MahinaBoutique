@@ -26,3 +26,9 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\obj\Debug\net5.0\ref\InventoryManagement.Infrastracture.EfCore.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\obj\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\obj\Debug\net5.0\InventoryManagement.Infrastracture.EfCore.genruntimeconfig.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\InventoryManagement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Domain.pdb

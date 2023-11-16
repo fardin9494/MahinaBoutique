@@ -16,6 +16,7 @@
     <ProjectReference Include="..\ShopManagement.Application.Contract\ShopManagement.Application.Contract.csproj" />
     <ProjectReference Include="..\ShopManagement.Application\ShopManagement.Application.csproj" />
     <ProjectReference Include="..\ShopManagement.Domain\ShopManagement.Domain.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastracture.InventoryAcl\ShopManagement.Infrastracture.InventoryAcl.csproj" />
     <ProjectReference Include="..\ShopManagment.InfraStracture.EfCore\ShopManagment.InfraStracture.EfCore.csproj" />
   </ItemGroup>
 

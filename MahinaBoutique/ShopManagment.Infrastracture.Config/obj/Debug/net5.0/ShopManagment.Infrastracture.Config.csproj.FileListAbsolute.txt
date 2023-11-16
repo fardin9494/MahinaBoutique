@@ -47,3 +47,11 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.pdb

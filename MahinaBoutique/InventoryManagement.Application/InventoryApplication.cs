@@ -9,10 +9,12 @@ namespace InventoryManagement.Application
     public class InventoryApplication : IInventoryApplication
     {
         private readonly IInventoryRepository _repository;
+        private readonly IAuthHelper _authHelper;
 
-        public InventoryApplication(IInventoryRepository repository)
+        public InventoryApplication(IInventoryRepository repository, IAuthHelper authHelper)
         {
             _repository = repository;
+            _authHelper = authHelper;
         }
 
         public OperationResult Create(CreateInventory command)
@@ -56,8 +58,9 @@ namespace InventoryManagement.Application
         public OperationResult Increase(IncreaseInventory command)
         {
             var operation = new OperationResult();
+            var operatorid = _authHelper.AuthenticatedAccountId();
             var inventory = _repository.GetBy(command.InventoryId);
-            inventory.Increase(command.Count,1,command.Description);
+            inventory.Increase(command.Count,operatorid,command.Description);
             _repository.SaveChanges();
             return operation.Succedded();
         }
@@ -70,8 +73,9 @@ namespace InventoryManagement.Application
         public OperationResult Reduce(ReduceInventory command)
         {
             var operation = new OperationResult();
+            var operatorid = _authHelper.AuthenticatedAccountId();
             var inventory = _repository.GetWith(command.InventoryId);
-            inventory.Reduce(command.Count,1,command.Description,0);
+            inventory.Reduce(command.Count,operatorid,command.Description,0);
             _repository.SaveChanges();
             return operation.Succedded();
         }
@@ -79,10 +83,11 @@ namespace InventoryManagement.Application
         public OperationResult Reduce(List<ReduceInventory> command)
         {
            var operation = new OperationResult();
+            var operatorid = _authHelper.AuthenticatedAccountId();
             foreach(var item in command)
             {
                 var inventory = _repository.GetWith(item.ProductId);
-                inventory.Reduce(item.Count,1,item.Description,item.OrderId);
+                inventory.Reduce(item.Count,operatorid,item.Description,item.OrderId);
             }
 
             _repository.SaveChanges();

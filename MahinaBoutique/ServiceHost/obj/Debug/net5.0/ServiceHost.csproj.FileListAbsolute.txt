@@ -276,3 +276,7 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\Micros
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\Nancy.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Pages\CheckOut.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\RestSharp.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\obj\Debug\net5.0\Razor\Pages\PaymentResult.cshtml.g.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.pdb

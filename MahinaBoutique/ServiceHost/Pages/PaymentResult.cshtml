@@ -1,0 +1,48 @@
+﻿@page
+@model ServiceHost.Pages.PaymentResultModel
+@{
+    ViewData["title"] = "وضعیت نهایی خرید";
+}
+<div class="breadcrumb-area section-space--half">
+    <div class="container wide">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--=======  breadcrumb wrpapper  =======-->
+                <div class="breadcrumb-wrapper breadcrumb-bg">
+                    <!--=======  breadcrumb content  =======-->
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-content__title">وضعیت نهایی خرید</h1>
+                        <ul class="breadcrumb-content__page-map">
+                            <li><a asp-page="./Index">صفحه اصلی</a></li>
+                            <li class="active">وضعیت نهایی خرید</li>
+                        </ul>
+                    </div>
+                    <!--=======  End of breadcrumb content  =======-->
+                </div>
+                <!--=======  End of breadcrumb wrpapper  =======-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                @if (Model.Result.IsSuccessful)
+                {
+                    <div class="alert alert-success">
+                        <p>@Model.Result.Message</p>
+                        <p><strong>@Model.Result.IssueTrackingNo</strong></p>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger">
+                        <p>@Model.Result.Message</p>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>

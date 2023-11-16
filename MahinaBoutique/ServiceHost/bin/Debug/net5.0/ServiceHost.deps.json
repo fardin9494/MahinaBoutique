@@ -123,7 +123,7 @@
           "Microsoft.Extensions.Caching.Abstractions.Reference": "5.0.0.0",
           "Microsoft.Extensions.Caching.Memory.Reference": "5.0.0.0",
           "Microsoft.Extensions.Configuration.Abstractions.Reference": "5.0.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "5.0.0.0",
+          "Microsoft.Extensions.Configuration.Binder.Reference": "5.0.0.0",
           "Microsoft.Extensions.Configuration.CommandLine": "5.0.0.0",
           "Microsoft.Extensions.Configuration": "5.0.0.0",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "5.0.0.0",
@@ -934,6 +934,11 @@
           "Microsoft.Extensions.Primitives": "5.0.1"
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/5.0.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
@@ -1358,6 +1363,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.11.4": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.11.4.0",
+            "fileVersion": "106.11.4.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2401,7 +2417,8 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "RestSharp": "106.11.4"
         },
         "runtime": {
           "0_SelfBuildFramwork.dll": {}
@@ -2713,6 +2730,7 @@
       },
       "InventoryManagement.Infrastracture.EfCore/1.0.0": {
         "dependencies": {
+          "AccountManagement.Infrastracture.EfCore": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
@@ -2742,6 +2760,7 @@
       },
       "ShopManagement.Application/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
           "ShopManagement.Application.Contract": "1.0.0",
           "ShopManagement.Domain": "1.0.0"
         },
@@ -2776,6 +2795,19 @@
           "ShopManagement.Domain.dll": {}
         }
       },
+      "ShopManagement.Infrastracture.InventoryAcl/1.0.0": {
+        "dependencies": {
+          "AccountManagement.Application.Contract": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagement.Infrastracture.InventoryAcl.dll": {}
+        },
+        "compile": {
+          "ShopManagement.Infrastracture.InventoryAcl.dll": {}
+        }
+      },
       "ShopManagment.Infrastracture.Config/1.0.0": {
         "dependencies": {
           "0_SelfBuildFramwork": "1.0.0",
@@ -2786,6 +2818,7 @@
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Application.Contract": "1.0.0",
           "ShopManagement.Domain": "1.0.0",
+          "ShopManagement.Infrastracture.InventoryAcl": "1.0.0",
           "ShopManagment.InfraStracture.EfCore": "1.0.0"
         },
         "runtime": {
@@ -3288,7 +3321,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Configuration.Binder/5.0.0.0": {
+      "Microsoft.Extensions.Configuration.Binder.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Configuration.Binder.dll": {}
         },
@@ -4771,6 +4804,13 @@
       "path": "microsoft.extensions.configuration.abstractions/5.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.Binder/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Of1Irt1+NzWO+yEYkuDh5TpT4On7LKl98Q9iLqCdOZps6XXEWDj3AKtmyvzJPVXZe4apmkJJIiDL7rR1yC+hjQ==",
+      "path": "microsoft.extensions.configuration.binder/5.0.0",
+      "hashPath": "microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection/5.0.2": {
       "type": "package",
       "serviceable": true,
@@ -5015,6 +5055,13 @@
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "RestSharp/106.11.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vx35q52cM3UQNOiN3UqSQ9U7I5UeoyzVmjsWKQxOxn6FVu+n01+SNwhxc/jvf92WPBmmwzTV4VYTeTg4KviJdA==",
+      "path": "restsharp/106.11.4",
+      "hashPath": "restsharp.106.11.4.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -5943,6 +5990,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ShopManagement.Infrastracture.InventoryAcl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ShopManagment.Infrastracture.Config/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -6353,7 +6405,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Configuration.Binder/5.0.0.0": {
+    "Microsoft.Extensions.Configuration.Binder.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

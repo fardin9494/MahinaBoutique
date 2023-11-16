@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qTl8dNYsn+BqFyLDOP+jzEhHb28S9yAmfaUhw0l/zGXf+tqatsvAbkAF9J7JeOundjSS5oMjMQIe3gPaTjHgew==",
+  "dgSpecHash": "P+l9ET7kajfl8BqwDX1TVz8N/LVCmzDfLtZhxVnWjoyar3E/Dlf7ZIymmd3BNE3ej675qM0oXpWLRZwYwbT6lg==",
   "success": true,
   "projectFilePath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\MahinaBoutique.Query\\MahinaBoutique.Query.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,7 @@
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Fardin\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Fardin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

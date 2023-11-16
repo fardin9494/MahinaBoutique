@@ -28,10 +28,13 @@ namespace ServiceHost.Pages
             var Serialaizer = new JavaScriptSerializer();
             var Value = Request.Cookies[CookieName];
             var Carts = Serialaizer.Deserialize<List<CartItem>>(Value);
-            foreach(var Cart in Carts)
+            if(Carts != null)
+            {
+                foreach(var Cart in Carts)
             {
                 var NumberPrice = double.Parse(Cart.UnitPrice, CultureInfo.CreateSpecificCulture("fa-ir"));
                 Cart.ItemPrice = NumberPrice * Cart.ProductCount;
+            }
             }
 
             CartItems = _productQuery.CheckInventoryStatus(Carts);
