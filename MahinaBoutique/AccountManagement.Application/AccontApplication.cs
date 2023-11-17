@@ -91,6 +91,11 @@ namespace AccountManagement.Application
 
         }
 
+        public List<AccountViewModel> GetAccount()
+        {
+            return _accountRepository.GetAccount();
+        }
+
         public EditAccount GetDetails(long id)
         {
             return _accountRepository.GetDetails(id);

@@ -27,3 +27,9 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\obj\Debug\net5.0\DiscountManagement.Infrastracture.Config.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\obj\Debug\net5.0\ref\DiscountManagement.Infrastracture.Config.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\obj\Debug\net5.0\DiscountManagement.Infrastracture.Config.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\DiscountManagemenet.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.pdb

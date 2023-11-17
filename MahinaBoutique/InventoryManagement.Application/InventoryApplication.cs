@@ -17,6 +17,11 @@ namespace InventoryManagement.Application
             _authHelper = authHelper;
         }
 
+        public bool CheckItemInStock(long ProductId, int count)
+        {
+           return  _repository.CheckInventoryStatus(ProductId,count);
+        }
+
         public OperationResult Create(CreateInventory command)
         {
             var operation = new OperationResult();

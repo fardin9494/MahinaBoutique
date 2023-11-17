@@ -11,5 +11,7 @@ namespace AccountManagement.Domain.AccountAgg
         Account GetWithUserName(string Username);
 
         List<AccountViewModel> Search(AccountSearchModel search);
+
+        List<AccountViewModel> GetAccount();
     }
 }

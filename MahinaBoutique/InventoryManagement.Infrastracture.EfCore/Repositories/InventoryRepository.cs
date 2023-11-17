@@ -25,6 +25,12 @@ namespace InventoryManagement.Infrastracture.EfCore.Repositories
             _accountContext = accountContext;
         }
 
+        public bool CheckInventoryStatus(long ProductId , int count)
+        {
+           var inventory =  _inventoryContext.Inventory.FirstOrDefault(x => x.ProductId == ProductId);
+           return inventory.CalculateCurrentCount() - count >= 0;
+        }
+
         public EditInventory GetDetails(long id)
         {
             return _inventoryContext.Inventory.Select(x => new EditInventory{ 
@@ -51,7 +57,7 @@ namespace InventoryManagement.Infrastracture.EfCore.Repositories
                Id = x.Id,
                Operation = x.Operation,
                OperationTime = x.OperationTime.ToFarsi(),
-                OperatorId = x.OperatorId,
+               OperatorId = x.OperatorId,
                OrderId = x.OrderId,
                }).ToList();
 

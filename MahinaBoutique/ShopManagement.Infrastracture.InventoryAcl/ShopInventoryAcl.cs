@@ -15,6 +15,11 @@ namespace ShopManagement.Infrastracture.InventoryAcl
             _inventoryApplication = inventoryApplication;
         }
 
+        public bool CheckItemInStock(long ProductId, int count)
+        {
+            return _inventoryApplication.CheckItemInStock(ProductId,count);
+        }
+
         public bool ReduceInventory(List<Orderitem> items)
         {
             var reduces = new List<ReduceInventory>();

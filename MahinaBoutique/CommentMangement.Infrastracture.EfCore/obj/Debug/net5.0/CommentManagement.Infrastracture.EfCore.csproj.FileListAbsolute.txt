@@ -32,3 +32,9 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfC
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\BlogManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\ShopManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\CommentMangement.Infrastracture.EfCore\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.pdb

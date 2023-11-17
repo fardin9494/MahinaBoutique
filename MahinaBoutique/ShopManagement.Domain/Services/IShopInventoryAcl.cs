@@ -10,5 +10,7 @@ namespace ShopManagement.Domain.Services
     public interface IShopInventoryAcl
     {
         bool ReduceInventory(List<Orderitem> items);
+
+        bool CheckItemInStock(long ProductId,int count);
     }
 }

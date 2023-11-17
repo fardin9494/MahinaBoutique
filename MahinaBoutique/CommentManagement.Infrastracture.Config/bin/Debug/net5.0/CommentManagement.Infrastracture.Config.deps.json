@@ -1280,6 +1280,33 @@
           "0_SelfBuildFramwork.dll": {}
         }
       },
+      "AccountManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "runtime": {
+          "AccountManagement.Application.Contract.dll": {}
+        }
+      },
+      "AccountManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "AccountManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "AccountManagement.Domain.dll": {}
+        }
+      },
+      "AccountManagement.Infrastracture.EfCore/1.0.0": {
+        "dependencies": {
+          "AccountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "runtime": {
+          "AccountManagement.Infrastracture.EfCore.dll": {}
+        }
+      },
       "BlogManagement.Application.Contract/1.0.0": {
         "dependencies": {
           "0_SelfBuildFramwork": "1.0.0",
@@ -1366,6 +1393,7 @@
       },
       "ShopManagment.InfraStracture.EfCore/1.0.0": {
         "dependencies": {
+          "AccountManagement.Infrastracture.EfCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "ShopManagement.Domain": "1.0.0"
@@ -2202,6 +2230,21 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "0_SelfBuildFramwork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountManagement.Infrastracture.EfCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

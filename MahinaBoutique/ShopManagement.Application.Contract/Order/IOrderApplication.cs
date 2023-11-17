@@ -12,6 +12,14 @@ namespace ShopManagement.Application.Contract.Order
 
         string Pay(long orderId,long refId);
 
+        void Cancel(long orderId);
+
         double GetAmountBy(long id);
+
+        List<OrderViewModel> Search(OrderSearchModel search);
+
+        public void CallAdmin();
+
+        public List<OrderItemViewModel> Getitems(long orderId);
     }
 }

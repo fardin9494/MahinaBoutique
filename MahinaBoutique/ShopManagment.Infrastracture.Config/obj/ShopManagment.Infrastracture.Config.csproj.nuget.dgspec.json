@@ -1608,6 +1608,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\AccountManagement.Infrastracture.EfCore\\AccountManagement.Infrastracture.EfCore.csproj": {
+                "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\AccountManagement.Infrastracture.EfCore\\AccountManagement.Infrastracture.EfCore.csproj"
+              },
               "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
                 "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }

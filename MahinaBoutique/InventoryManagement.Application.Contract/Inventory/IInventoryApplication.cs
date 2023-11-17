@@ -24,5 +24,7 @@ namespace InventoryManagement.Application.Contract.Inventory
         OperationResult Reduce(List<ReduceInventory> command);
 
         List<InventoryOperationViewModel> Operations (long InventoryId);
+
+        bool CheckItemInStock(long ProductId, int count);
     }
 }

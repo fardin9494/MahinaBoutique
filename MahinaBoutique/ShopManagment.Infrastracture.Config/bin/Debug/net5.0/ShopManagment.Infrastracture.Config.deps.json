@@ -1492,6 +1492,7 @@
       },
       "ShopManagment.InfraStracture.EfCore/1.0.0": {
         "dependencies": {
+          "AccountManagement.Infrastracture.EfCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "ShopManagement.Domain": "1.0.0"

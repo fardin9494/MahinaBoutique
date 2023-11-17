@@ -16,6 +16,14 @@ namespace AccountManagement.Infrastracture.EfCore.Repositories
             _context = context;
         }
 
+        public List<AccountViewModel> GetAccount()
+        {
+            return _context.Accounts.Select(x => new AccountViewModel{
+                Id = x.Id,
+                FullName = x.FullName,
+                }).ToList();
+        }
+
         public EditAccount GetDetails(long id)
         {
             return _context.Accounts.Select(x => new EditAccount

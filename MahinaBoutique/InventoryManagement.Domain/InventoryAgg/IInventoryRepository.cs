@@ -16,6 +16,8 @@ namespace InventoryManagement.Domain.InventoryAgg
 
         Inventory GetWith(long ProductId);
 
-        List<InventoryOperationViewModel> Operations (long InventoryId);        
+        List<InventoryOperationViewModel> Operations (long InventoryId);
+        
+        bool CheckInventoryStatus(long ProductId , int count);
     }
 }

@@ -1736,6 +1736,48 @@
           "bin/placeholder/0_SelfBuildFramwork.dll": {}
         }
       },
+      "AccountManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Application.Contract.dll": {}
+        }
+      },
+      "AccountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_SelfBuildFramwork": "1.0.0",
+          "AccountManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Domain.dll": {}
+        }
+      },
+      "AccountManagement.Infrastracture.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AccountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Infrastracture.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Infrastracture.EfCore.dll": {}
+        }
+      },
       "DiscountManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1826,6 +1868,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AccountManagement.Infrastracture.EfCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "ShopManagement.Domain": "1.0.0"
@@ -6197,6 +6240,21 @@
       "type": "project",
       "path": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj",
       "msbuildProject": "../0_SelfBuildFramwork/0_SelfBuildFramwork.csproj"
+    },
+    "AccountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../AccountManagement.Application.Contract/AccountManagement.Application.Contract.csproj",
+      "msbuildProject": "../AccountManagement.Application.Contract/AccountManagement.Application.Contract.csproj"
+    },
+    "AccountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AccountManagement.Domain/AccountManagement.Domain.csproj",
+      "msbuildProject": "../AccountManagement.Domain/AccountManagement.Domain.csproj"
+    },
+    "AccountManagement.Infrastracture.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../AccountManagement.Infrastracture.EfCore/AccountManagement.Infrastracture.EfCore.csproj",
+      "msbuildProject": "../AccountManagement.Infrastracture.EfCore/AccountManagement.Infrastracture.EfCore.csproj"
     },
     "DiscountManagement.Application/1.0.0": {
       "type": "project",

@@ -19,6 +19,8 @@ namespace AccountManagement.Application.Contract.Account
 
         OperationResult ChangePassword(ChangeAccountPassword command);
 
+        List<AccountViewModel> GetAccount();
+
         EditAccount GetDetails(long id);
 
         List<AccountViewModel> Search(AccountSearchModel search);
