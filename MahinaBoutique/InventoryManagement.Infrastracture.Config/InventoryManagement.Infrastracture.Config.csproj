@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\InventoryManagement.Application\InventoryManagement.Application.csproj" />
     <ProjectReference Include="..\InventoryManagement.Infrastracture.EfCore\InventoryManagement.Infrastracture.EfCore.csproj" />
+    <ProjectReference Include="..\MahinaBoutique.Query\MahinaBoutique.Query.csproj" />
   </ItemGroup>
 
 </Project>

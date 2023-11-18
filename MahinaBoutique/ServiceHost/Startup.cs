@@ -6,6 +6,7 @@ using BlogManagement.Infrastracture.Config;
 using CommentManagement.Infrastracture.Config;
 using DiscountManagement.Infrastracture.Config;
 using InventoryManagement.Infrastracture.Config;
+using InventoryManagement.Presentaion.API;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -83,7 +84,9 @@ namespace ServiceHost
               option.Conventions.AuthorizeAreaFolder("Administration","/Discount","Discount");
               option.Conventions.AuthorizeAreaFolder("Administration","/Account","Account");
                 
-                });
+                })
+                .AddApplicationPart(typeof(InventoryController).Assembly);
+              //  .AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
