@@ -10,7 +10,6 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.Inven
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\bin\Debug\net5.0\0_SelfBuildFramwork.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\bin\Debug\net5.0\ShopManagement.Application.Contract.pdb
-C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.csproj.AssemblyReference.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.GeneratedMSBuildEditorConfig.editorconfig
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.AssemblyInfoInputs.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.AssemblyInfo.cs
@@ -21,3 +20,4 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.Inven
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagement.Infrastracture.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastracture.InventoryAcl.csproj.AssemblyReference.cache

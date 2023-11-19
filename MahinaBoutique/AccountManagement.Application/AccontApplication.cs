@@ -96,6 +96,17 @@ namespace AccountManagement.Application
             return _accountRepository.GetAccount();
         }
 
+        public (string Name, string mobile) GetAccountInfo(long id)
+        {
+            var Account = _accountRepository.GetBy(id);
+           var output = new {
+              Name = Account.FullName,
+              mobile =  Account.Mobile
+            };
+
+            return (output.Name , output.mobile);
+        }
+
         public EditAccount GetDetails(long id)
         {
             return _accountRepository.GetDetails(id);

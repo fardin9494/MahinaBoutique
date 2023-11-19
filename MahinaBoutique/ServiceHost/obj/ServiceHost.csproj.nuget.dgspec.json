@@ -44,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "IPE.SmsIR": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "Microsoft.AspNetCore.Authentication.Cookies": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -2351,6 +2355,71 @@
         }
       }
     },
+    "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.ShopAccountAcl\\ShopManagement.Infrastracture.AccountAcl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.ShopAccountAcl\\ShopManagement.Infrastracture.AccountAcl.csproj",
+        "projectName": "ShopManagement.Infrastracture.AccountAcl",
+        "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.ShopAccountAcl\\ShopManagement.Infrastracture.AccountAcl.csproj",
+        "packagesPath": "C:\\Users\\Fardin\\.nuget\\packages\\",
+        "outputPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.ShopAccountAcl\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Fardin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj"
+              },
+              "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagment.Infrastracture.Config\\ShopManagment.Infrastracture.Config.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -2396,6 +2465,9 @@
               },
               "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.InventoryAcl\\ShopManagement.Infrastracture.InventoryAcl.csproj": {
                 "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.InventoryAcl\\ShopManagement.Infrastracture.InventoryAcl.csproj"
+              },
+              "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.ShopAccountAcl\\ShopManagement.Infrastracture.AccountAcl.csproj": {
+                "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagement.Infrastracture.ShopAccountAcl\\ShopManagement.Infrastracture.AccountAcl.csproj"
               },
               "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagment.InfraStracture.EfCore\\ShopManagment.InfraStracture.EfCore.csproj": {
                 "projectPath": "C:\\MahinaBoutiqueProject\\Code\\MahinaBoutique\\ShopManagment.InfraStracture.EfCore\\ShopManagment.InfraStracture.EfCore.csproj"

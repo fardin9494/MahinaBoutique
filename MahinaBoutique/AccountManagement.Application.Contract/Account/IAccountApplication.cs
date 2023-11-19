@@ -24,5 +24,7 @@ namespace AccountManagement.Application.Contract.Account
         EditAccount GetDetails(long id);
 
         List<AccountViewModel> Search(AccountSearchModel search);
+
+        (string Name, string mobile) GetAccountInfo(long id);
     }
 }

@@ -1,4 +1,5 @@
-﻿using _0_SelfBuildFramwork.Application;
+﻿using _0_SelfBuildFramwork.Application.Sms;
+using _0_SelfBuildFramwork.Application;
 using Microsoft.Extensions.Configuration;
 using ShopManagement.Application.Contract.Order;
 using ShopManagement.Domain.OrderAgg;
@@ -15,13 +16,18 @@ namespace ShopManagement.Application
         private readonly IAuthHelper _authHelper;
         private readonly IConfiguration _configuration;
         private readonly IShopInventoryAcl _shopinventory;
+        private readonly IShopAccountAcl _shopAccountAcl;
+        private readonly ISmsService _smsService;
 
-        public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration, IShopInventoryAcl shopinventory)
+        public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration, IShopInventoryAcl shopinventory, IShopAccountAcl shopAccountAcl, ISmsService smsService)
         {
             _orderRepository = orderRepository;
             _authHelper = authHelper;
             _configuration = configuration;
             _shopinventory = shopinventory;
+            _shopAccountAcl = shopAccountAcl;
+            _smsService = smsService;
+
         }
 
         public void Cancel(long orderId)
@@ -60,6 +66,7 @@ namespace ShopManagement.Application
         {
            
            var order = _orderRepository.GetBy(orderId);
+           var account = _shopAccountAcl.GetAccountInfo(order.AccountId);
            var symbol = _configuration.GetValue<string>("symbol");
            string IssueNo = CodeGenerator.Generate(symbol);
            order.PaymentSucceeded(refId);
@@ -82,7 +89,11 @@ namespace ShopManagement.Application
                 {
                     _shopinventory.ReduceInventory(order.Items);
                     _orderRepository.SaveChanges();
+                   _smsService.Send(account.mobile,$"{account.Name} عزیز سفارش شما با کد رهگیری {IssueNo} ثبت شد و ارسال میگردد");
                     return IssueNo;
+
+                    
+
                 }
                 
             }
@@ -90,6 +101,7 @@ namespace ShopManagement.Application
             else if (_shopinventory.ReduceInventory(order.Items))
             {   
                 _orderRepository.SaveChanges();
+                _smsService.Send(account.mobile,$"{account.Name} عزیز سفارش شما با کد رهگیری {IssueNo} ثبت شد ");
                 return IssueNo;
             }
             return "";

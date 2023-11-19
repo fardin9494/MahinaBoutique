@@ -1,4 +1,5 @@
 using _0_SelfBuildFramwork.Application;
+using _0_SelfBuildFramwork.Application.Sms;
 using _0_SelfBuildFramwork.Application.ZarinPal;
 using _0_SelfBuildFramwork.Infrastracture;
 using AccountManagement.Infrastracture.Config;
@@ -67,6 +68,7 @@ namespace ServiceHost
             services.AddTransient<IAuthHelper,AuthHelper>();
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
+            services.AddTransient<ISmsService, SmsService>();
 
             services.AddAuthorization(option => {
             option.AddPolicy("AdminArea", builder => builder.RequireRole(new List<string> { Roles.SystemAdmin , Roles.SystemManager }));

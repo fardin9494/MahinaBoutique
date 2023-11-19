@@ -1,4 +1,3 @@
-C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.csproj.AssemblyReference.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.AssemblyInfoInputs.cache
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.AssemblyInfo.cs
@@ -17,3 +16,4 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\D
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\ref\AccountManagement.Application.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.csproj.AssemblyReference.cache

@@ -55,3 +55,5 @@ C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.dll
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Domain.pdb
 C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\AccountManagement.Infrastracture.EfCore.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\ShopManagement.Infrastracture.AccountAcl.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\ShopManagment.Infrastracture.Config\bin\Debug\net5.0\ShopManagement.Infrastracture.AccountAcl.pdb
