@@ -60,7 +60,7 @@ namespace MahinaBoutique.Query.Query
 
         private static List<ArticleQueryModel> MapArticles(List<Article> articles)
         {
-           return articles.Select(x => new ArticleQueryModel{
+           return articles.Where(x => x.PublishDate < DateTime.Now).Select(x => new ArticleQueryModel{
                ShortDescription = x.ShortDescription,
                Slug = x.Slug,
                CanonicalAddress = x.CanonicalAddress,

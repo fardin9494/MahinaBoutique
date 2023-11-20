@@ -1,0 +1,12 @@
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\bin\Release\net5.0\0_SelfBuildFramwork.deps.json
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\bin\Release\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\bin\Release\net5.0\ref\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\bin\Release\net5.0\0_SelfBuildFramwork.pdb
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.csproj.AssemblyReference.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.AssemblyInfoInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.AssemblyInfo.cs
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.csproj.CoreCompileInputs.cache
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\ref\0_SelfBuildFramwork.dll
+C:\MahinaBoutiqueProject\Code\MahinaBoutique\0_SelfBuildFramwork\obj\Release\net5.0\0_SelfBuildFramwork.pdb

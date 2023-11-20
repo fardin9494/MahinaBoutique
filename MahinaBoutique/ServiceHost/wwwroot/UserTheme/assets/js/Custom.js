@@ -2,7 +2,7 @@
 
 const CookieName = "Item-cart" ;
 function AddToCart(Id, Name, Price, Picture) {
-    let Products = $.cookie(CookieName);
+    var Products = $.cookie(CookieName);
     if (Products === undefined) {
         Products = []
     } else {
@@ -29,12 +29,15 @@ function AddToCart(Id, Name, Price, Picture) {
 
 function UpdateCart() {
   
-    let Products = $.cookie(CookieName);
+    var Products = $.cookie(CookieName);
     Products = JSON.parse(Products);
     $("#cart_item_count").text(Products.length)
-
-    let CartItems = $("#cart-item-wrapper")
+    $("#cart_item_count_mobile").text(Products.length)
+    
+    var CartItems = $("#cart-item-wrapper")
     CartItems.html("")
+    var CartItemsmobile = $("#cart-item-wrapper-mobile")
+    CartItemsmobile.html("")
 
     Products.forEach(x => {
         const Product = ` <div class="single-cart-item">
@@ -58,12 +61,13 @@ function UpdateCart() {
                                                 </div>
                                             </div>`
         CartItems.append(Product)
+        CartItemsmobile.append(Product)
     }
         )
 }
 
 function RemoveCartItem(id) {
-    let Products = $.cookie(CookieName);
+    var Products = $.cookie(CookieName);
     Products = JSON.parse(Products);
     const itemToRemove = Products.findIndex(x => x.id== id)
     Products.splice(itemToRemove,1)
@@ -73,7 +77,7 @@ function RemoveCartItem(id) {
 
 function ChangeProductCount(id, Totalprice, productCount) {
     
-    let Products = $.cookie(CookieName);
+    var Products = $.cookie(CookieName);
     Products = JSON.parse(Products);
     var Selectedindex = Products.findIndex(x => x.Id == id);
     var SelectedProduct = Products[Selectedindex];
@@ -94,7 +98,7 @@ function ChangeProductCount(id, Totalprice, productCount) {
     };
     
     $.ajax(settings).done(function (data) {
-        debugger;
+       
         if (data.inStock == false) {
             const warningsDiv = $('#productStockWarnings');
             if ($(`#${id}`).length == 0) {
@@ -106,7 +110,7 @@ function ChangeProductCount(id, Totalprice, productCount) {
                     </div>
                 `);
             }
-            debugger;
+            
         } else {
             if ($(`#${id}`).length > 0) {
                 $(`#${id}`).remove();

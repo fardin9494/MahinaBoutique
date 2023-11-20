@@ -74,6 +74,13 @@
         $('body').addClass('active-overlay');
     });
 
+      $('#minicart-trigger-mobile').on('click', function(e){
+        e.preventDefault();
+        $(this).siblings('.mini-cart').toggleClass('active');
+        $('#settings-menu-wrapper').removeClass('active');
+        $('body').addClass('active-overlay');
+    });
+
     $('#header-settings-trigger').on('click', function(e){
         e.preventDefault();
         $(this).siblings('.settings-menu-wrapper').toggleClass('active');

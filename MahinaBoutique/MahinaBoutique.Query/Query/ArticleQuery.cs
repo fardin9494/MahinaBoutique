@@ -63,7 +63,7 @@ namespace MahinaBoutique.Query.Query
 
         public List<ArticleQueryModel> LatestArticles()
         {
-            return _blogcontext.Articles.Where(x => x.PublishDate >= DateTime.Now).Include(x => x.Category).Select(x => new ArticleQueryModel{
+            return _blogcontext.Articles.Where(x => x.PublishDate <= DateTime.Now).Include(x => x.Category).Select(x => new ArticleQueryModel{
                 Id = x.Id,
                 CanonicalAddress = x.CanonicalAddress,
                 ShortDescription = x.ShortDescription,
